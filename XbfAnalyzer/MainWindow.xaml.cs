@@ -90,7 +90,7 @@ public partial class MainWindow : Window
             for (int i = 0; i < xbf.TypeTable.Length; i++)
             {
                 var type = xbf.TypeTable[i];
-                LogHexAddressMessage(i, "{0} (Namespace: {1}, Flags: {2})", type.Name, type.Namespace.Name, type.Flags);
+                LogHexAddressMessage(i, "{0} (Namespace: {1}, Flags: {2})", type.Name, type.Namespace?.Name ?? "?", type.Flags);
             }
             LogMessage();
 

@@ -903,9 +903,12 @@ public class XbfReader
             return XbfFrameworkTypes.GetNameForTypeID(id & ~0x8000) ?? string.Format("UnknownType0x{0:X4}", id);
 
         var type = TypeTable[id];
-        var namespaceName = "using:" + type.Namespace.Name;
-        if (_namespacePrefixes.TryGetValue(namespaceName, out var prefix))
-            return prefix + ":" + type.Name;
+        if (type.Namespace != null)
+        {
+            var namespaceName = "using:" + type.Namespace.Name;
+            if (_namespacePrefixes.TryGetValue(namespaceName, out var prefix))
+                return prefix + ":" + type.Name;
+        }
         return type.Name;
     }
 

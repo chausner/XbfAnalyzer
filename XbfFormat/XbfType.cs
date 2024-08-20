@@ -8,13 +8,14 @@ public class XbfType
         if ((int)Flags < 0 || (int)Flags > 2 + 1)
             throw new InvalidDataException($"Unknown XbfTypeFlags: {Flags}");
         int namespaceID = reader.ReadInt32();
-        Namespace = xbf.TypeNamespaceTable[namespaceID];
+        if (!Flags.HasFlag(XbfTypeFlags.Unknown2)) // TODO: when XbfTypeFlags.Unknown2 is set, namespaceID is to be interpreted differently
+            Namespace = xbf.TypeNamespaceTable[namespaceID];
         int nameID = reader.ReadInt32();
         Name = xbf.StringTable[nameID];
     }
 
     public XbfTypeFlags Flags { get; }
-    public XbfTypeNamespace Namespace { get; }
+    public XbfTypeNamespace? Namespace { get; }
     public string Name { get; }
 }
 
