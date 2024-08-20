@@ -5,6 +5,8 @@ public class XbfAssembly
     internal XbfAssembly(XbfReader xbf, BinaryReader reader)
     {
         Kind = (XbfAssemblyKind)reader.ReadInt32();
+        if ((int)Kind < 0 || (int)Kind > 5)
+            throw new InvalidDataException($"Unknown XbfAssemblyKind: {Kind}");
         int stringID = reader.ReadInt32();
         Name = xbf.StringTable[stringID];
     }

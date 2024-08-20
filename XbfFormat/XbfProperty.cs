@@ -5,6 +5,8 @@ public class XbfProperty
     internal XbfProperty(XbfReader xbf, BinaryReader reader)
     {
         Flags = (XbfPropertyFlags)reader.ReadInt32();
+        if ((int)Flags < 0 || (int)Flags > 16 + 8 + 4 + 2 + 1)
+            throw new InvalidDataException($"Unknown XbfPropertyFlags: {Flags}");
         int typeID = reader.ReadInt32();
         Type = xbf.TypeTable[typeID];
         int nameID = reader.ReadInt32();
@@ -24,4 +26,6 @@ public enum XbfPropertyFlags
     IsXmlProperty = 1,
     IsMarkupDirective = 2,
     IsImplicitProperty = 4,
+    Unknown8 = 8,
+    Unknown16 = 16
 }
