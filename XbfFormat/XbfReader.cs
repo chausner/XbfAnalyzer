@@ -422,6 +422,16 @@ public class XbfReader
                     }
                     break;
 
+                case 0x26: // Begin Conditional XAML block
+                    {
+                        string typeName = GetTypeName(reader.ReadUInt16());
+                        string argument = StringTable[reader.ReadUInt16()];
+                    }
+                    break;
+
+                case 0x27: // End Conditional XAML block
+                    break;
+
                 case 0x8B: // Unknown purpose, only encountered in one file
                     _objectStack.Pop();
                     break;
