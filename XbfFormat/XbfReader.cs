@@ -561,32 +561,69 @@ public class XbfReader
                     propertyName = GetPropertyName(reader.ReadUInt16());
                     propertyValue = GetPropertyValue(reader);
                     break;
+                case 0x50: // general objects, setter is encoded as normal object
+                    propertyName = GetPropertyName(reader.ReadUInt16());
+                    valueOffset = reader.Read7BitEncodedInt();
+                    break;
+                case 0xD0: // general objects, setter is encoded as normal object
+                    if (reader.Read7BitEncodedInt() != 1) // TODO: purpose unknown
+                        throw new InvalidDataException("Unexpected value");
+                    propertyName = GetPropertyName(reader.ReadUInt16());
+                    valueOffset = reader.Read7BitEncodedInt();
+                    break;
                 default:
-                    throw new InvalidDataException("Unexpected value");
+                    throw new InvalidDataException($"Unknown property value type {valueType}");
             }
 
-            // General objects can be read directly with ReadObjectInNodeSection
-            if (valueType == 0x08 || valueType == 0x18)
-                propertyValue = ReadObjectInNodeSection(reader, nodeSection, valueOffset);
-
-            if (propertyValue != null)
+            switch (valueType)
             {
-                var setter = new XbfObject();
-                setter.TypeName = "Setter";
-                setter.Properties.Add(new XbfObjectProperty("Property", propertyName));
-                setter.Properties.Add(new XbfObjectProperty("Value", propertyValue));
-                _objectCollectionStack.Peek().Add(setter);
-            }
-            else // StaticResource or ThemeResource need to be read with the Setter already on the stack
-            {
-                var setter = new XbfObject();
-                setter.TypeName = "Setter";
-                setter.Properties.Add(new XbfObjectProperty("Property", propertyName));                    
-                _objectCollectionStack.Peek().Add(setter);
+                case 0x01:
+                case 0x02:
+                case 0x11:
+                case 0x12:
+                    {
+                        // StaticResource or ThemeResource need to be read with the Setter already on the stack
+                        XbfObject setter = new XbfObject();
+                        setter.TypeName = "Setter";
+                        setter.Properties.Add(new XbfObjectProperty("Property", propertyName));
+                        _objectCollectionStack.Peek().Add(setter);
 
-                _objectStack.Push(setter);
-                ReadNodeInNodeSection(reader, nodeSection, valueOffset);
-                _objectStack.Pop();
+                        _objectStack.Push(setter);
+                        ReadNodeInNodeSection(reader, nodeSection, valueOffset);
+                        _objectStack.Pop();                        
+                    }
+                    break;
+                case 0x08:
+                case 0x18:
+                    {
+                        // General objects can be read directly with ReadObjectInNodeSection
+                        propertyValue = ReadObjectInNodeSection(reader, nodeSection, valueOffset);
+
+                        XbfObject setter = new XbfObject();
+                        setter.TypeName = "Setter";
+                        setter.Properties.Add(new XbfObjectProperty("Property", propertyName));
+                        setter.Properties.Add(new XbfObjectProperty("Value", propertyValue));
+                        _objectCollectionStack.Peek().Add(setter);                        
+                    }
+                    break;
+                case 0x20:
+                case 0x30:
+                    {
+                        XbfObject setter = new XbfObject();
+                        setter.TypeName = "Setter";
+                        setter.Properties.Add(new XbfObjectProperty("Property", propertyName));
+                        setter.Properties.Add(new XbfObjectProperty("Value", propertyValue!));
+                        _objectCollectionStack.Peek().Add(setter);                        
+                    }
+                    break;
+                case 0x50:
+                case 0xD0:
+                    {
+                        // General objects can be read directly with ReadObjectInNodeSection
+                        XbfObject setter = ReadObjectInNodeSection(reader, nodeSection, valueOffset);
+                        _objectCollectionStack.Peek().Add(setter);                        
+                    }
+                    break;
             }
         }
     }
