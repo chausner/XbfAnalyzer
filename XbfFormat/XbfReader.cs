@@ -432,6 +432,12 @@ public class XbfReader
                 case 0x27: // End Conditional XAML block
                     break;
 
+                case 0x28: // Object end and immediate return
+                    // Pop Children collection of ending object off the object collection stack if it had been pushed there earlier
+                    if (_objectCollectionStack.Count > 0 && _objectCollectionStack.Peek() == _objectStack.Peek().Children)
+                        _objectCollectionStack.Pop();
+                    return;
+
                 case 0x8B: // Unknown purpose, only encountered in one file
                     _objectStack.Pop();
                     break;
