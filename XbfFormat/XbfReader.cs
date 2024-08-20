@@ -918,6 +918,9 @@ public class XbfReader
             case 0x09: // Duration (as an in-line string)
                 return ReadString(reader);
 
+            case 0x0A: // Empty string
+                return string.Empty;
+
             case 0x0B: // Enumeration
                 int enumID = reader.ReadUInt16();
                 int enumValue = reader.ReadInt32();
