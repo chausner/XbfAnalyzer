@@ -382,6 +382,13 @@ public class XbfReader
                     }
                     break;
 
+                case 0x0B: // x:Class property
+                    {
+                        string className = ReadString(reader);
+                        _objectStack.Peek().Properties.Add(new XbfObjectProperty("x:Class", className));
+                    }
+                    break;
+
                 case 0x15: // Literal value (x:Int32, x:String, etc. and types in Windows.UI.Xaml namespace)
                 case 0x16: // Literal value of type that is not in Windows.UI.Xaml namespace
                     {
@@ -401,7 +408,6 @@ public class XbfReader
                     break;
 
                 case 0x12: // Root objects can be nested
-                case 0x0B:
                 case 0x17: 
                     // Rewind and handle the object in ReadRoot
                     reader.BaseStream.Seek(-1, SeekOrigin.Current);
