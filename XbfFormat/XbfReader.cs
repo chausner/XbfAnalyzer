@@ -488,11 +488,15 @@ public class XbfReader
                 break;
 
             case 6: // DeferredElement
-                ReadDeferredElement(reader, nodeSection, true);
+                ReadDeferredElement(reader, nodeSection, true, false);
                 break;
 
             case 746: // DeferredElement
-                ReadDeferredElement(reader, nodeSection, false);
+                ReadDeferredElement(reader, nodeSection, false, false);
+                break;
+
+            case 9: // DeferredElement                    
+                ReadDeferredElement(reader, nodeSection, true, true);
                 break;
 
             default:
@@ -628,7 +632,7 @@ public class XbfReader
         }
     }
 
-    private void ReadDeferredElement(BinaryReaderEx reader, XbfNodeSection nodeSection, bool extended)
+    private void ReadDeferredElement(BinaryReaderEx reader, XbfNodeSection nodeSection, bool extended, bool extended2)
     {
         string deferredElementName = StringTable[reader.ReadUInt16()];
 
@@ -647,6 +651,9 @@ public class XbfReader
         XbfObject childObj = _objectStack.Pop();
         XbfObject deferredElement = _objectStack.Peek();
         deferredElement.Children.Add(childObj);
+
+        if (extended2)
+            reader.Read7BitEncodedInt(); // TODO: purpose unknown          
     }
 
     private void ReadNodeSection(BinaryReaderEx reader, XbfNodeSection nodeSection)
