@@ -1,5 +1,4 @@
-﻿using System.Drawing;
-using System.Text;
+﻿using System.Text;
 
 namespace XbfAnalyzer.Xbf;
 
@@ -911,7 +910,7 @@ public class XbfReader
                 byte g = reader.ReadByte();
                 byte r = reader.ReadByte();
                 byte a = reader.ReadByte();
-                return Color.FromArgb(a, r, g, b);
+                return string.Format("#{0:X2}{1:X2}{2:X2}{3:X2}", a, r, g, b);
 
             case 0x09: // Duration (as an in-line string)
                 return ReadString(reader);
