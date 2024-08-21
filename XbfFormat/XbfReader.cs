@@ -15,11 +15,11 @@ public class XbfReader
     public XbfNodeSection[]? NodeSectionTable { get; }
     public XbfObject? RootObject { get; }
 
-    private int _firstNodeSectionPosition;
-    private Dictionary<string, string> _namespacePrefixes = new();
-    private Stack<XbfObject> _rootObjectStack = new();
-    private Stack<XbfObject> _objectStack = new();
-    private Stack<XbfObjectCollection> _objectCollectionStack = new();
+    private readonly int _firstNodeSectionPosition;
+    private readonly Dictionary<string, string> _namespacePrefixes = new();
+    private readonly Stack<XbfObject> _rootObjectStack = new();
+    private readonly Stack<XbfObject> _objectStack = new();
+    private readonly Stack<XbfObjectCollection> _objectCollectionStack = new();
 
     public XbfReader(string path)
     {
