@@ -836,8 +836,8 @@ public class XbfReader
 
         var type = TypeTable[id];
         var namespaceName = "using:" + type.Namespace.Name;
-        if (_namespacePrefixes.ContainsKey(namespaceName))
-            return _namespacePrefixes[namespaceName] + ":" + type.Name;
+        if (_namespacePrefixes.TryGetValue(namespaceName, out var prefix))
+            return prefix + ":" + type.Name;
         return type.Name;
     }
 
