@@ -20,10 +20,9 @@ public class XbfReader
     private readonly Stack<XbfObject> _objectStack = new();
     private readonly Stack<XbfObjectCollection> _objectCollectionStack = new();
 
-    public XbfReader(string path)
+    public XbfReader(Stream stream, bool leaveOpen = false)
     {
-        using (var fileStream = File.OpenRead(path))
-        using (var reader = new BinaryReaderEx(fileStream, Encoding.Unicode))
+        using (var reader = new BinaryReaderEx(stream, Encoding.Unicode, leaveOpen))
         {
             Header = new XbfHeader(reader);
             StringTable = ReadStringTable(reader);
@@ -57,6 +56,10 @@ public class XbfReader
                 RootObject = ReadRootNodeSection(reader);
             }
         }
+    }
+
+    public XbfReader(string path) : this(File.OpenRead(path))
+    {        
     }
 
     private string ReadString(BinaryReader reader)
