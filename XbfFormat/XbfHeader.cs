@@ -2,7 +2,7 @@
 
 public class XbfHeader
 {
-    public XbfHeader(BinaryReader reader)
+    internal XbfHeader(BinaryReader reader)
     {
         // Verify magic number
         var magicNumber = reader.ReadBytes(4);

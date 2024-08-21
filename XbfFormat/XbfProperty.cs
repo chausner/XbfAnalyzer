@@ -2,7 +2,7 @@
 
 public class XbfProperty
 {
-    public XbfProperty(XbfReader xbf, BinaryReader reader)
+    internal XbfProperty(XbfReader xbf, BinaryReader reader)
     {
         Flags = (XbfPropertyFlags)reader.ReadInt32();
         int typeID = reader.ReadInt32();

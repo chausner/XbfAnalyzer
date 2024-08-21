@@ -2,7 +2,7 @@
 
 public class XbfAssembly
 {
-    public XbfAssembly(XbfReader xbf, BinaryReader reader)
+    internal XbfAssembly(XbfReader xbf, BinaryReader reader)
     {
         Kind = (XbfAssemblyKind)reader.ReadInt32();
         int stringID = reader.ReadInt32();

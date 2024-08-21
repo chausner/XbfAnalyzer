@@ -2,7 +2,7 @@
 
 public class XbfNodeSection
 {
-    public XbfNodeSection(XbfReader xbf, BinaryReader reader)
+    internal XbfNodeSection(XbfReader xbf, BinaryReader reader)
     {
         NodeOffset = reader.ReadInt32();
         PositionalOffset = reader.ReadInt32();

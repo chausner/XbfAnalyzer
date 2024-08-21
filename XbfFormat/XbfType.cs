@@ -2,7 +2,7 @@
 
 public class XbfType
 {
-    public XbfType(XbfReader xbf, BinaryReader reader)
+    internal XbfType(XbfReader xbf, BinaryReader reader)
     {
         Flags = (XbfTypeFlags)reader.ReadInt32();
         int namespaceID = reader.ReadInt32();

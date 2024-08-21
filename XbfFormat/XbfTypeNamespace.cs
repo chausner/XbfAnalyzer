@@ -2,7 +2,7 @@
 
 public class XbfTypeNamespace
 {
-    public XbfTypeNamespace(XbfReader xbf, BinaryReader reader)
+    internal XbfTypeNamespace(XbfReader xbf, BinaryReader reader)
     {
         int assemblyID = reader.ReadInt32();
         Assembly = xbf.AssemblyTable[assemblyID];

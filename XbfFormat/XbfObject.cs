@@ -13,6 +13,10 @@ public class XbfObject
     public List<XbfObjectProperty> Properties { get; } = new List<XbfObjectProperty>();
     public XbfObjectCollection Children { get; } = new XbfObjectCollection();
 
+    internal XbfObject()
+    {
+    }
+
     public override string ToString()
     {
         return ToString(0);

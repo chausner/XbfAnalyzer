@@ -2,7 +2,7 @@
 
 public class XbfObjectProperty
 {
-    public XbfObjectProperty(string name, object value)
+    internal XbfObjectProperty(string name, object value)
     {
         Name = name;
         Value = value;
