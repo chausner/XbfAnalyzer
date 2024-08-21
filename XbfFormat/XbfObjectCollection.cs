@@ -1,25 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
-namespace XbfAnalyzer.Xbf
+namespace XbfAnalyzer.Xbf;
+
+public class XbfObjectCollection : List<XbfObject>
 {
-    public class XbfObjectCollection : List<XbfObject>
+    public override string ToString()
     {
-        public override string ToString()
-        {
-            return ToString(0);
-        }
+        return ToString(0);
+    }
 
-        public string ToString(int indentLevel)
-        {
-            StringBuilder sb = new StringBuilder();
+    public string ToString(int indentLevel)
+    {
+        StringBuilder sb = new StringBuilder();
 
-            foreach (var obj in this)
-                sb.AppendLine(obj.ToString(indentLevel));
-            return sb.ToString();
-        }
+        foreach (var obj in this)
+            sb.AppendLine(obj.ToString(indentLevel));
+        return sb.ToString();
     }
 }
