@@ -11,9 +11,9 @@ public class XbfProperty
         Name = xbf.StringTable[nameID];
     }
 
-    public XbfPropertyFlags Flags { get; private set; }
-    public XbfType Type { get; private set; }
-    public string Name { get; private set; }
+    public XbfPropertyFlags Flags { get; }
+    public XbfType Type { get; }
+    public string Name { get; }
 }
 
 [Flags]

@@ -5,15 +5,15 @@ namespace XbfAnalyzer.Xbf;
 
 public class XbfReader
 {
-    public XbfHeader Header { get; private set; }
-    public string[] StringTable { get; private set; }
-    public XbfAssembly[] AssemblyTable { get; private set; }
-    public XbfTypeNamespace[] TypeNamespaceTable { get; private set; }
-    public XbfType[] TypeTable { get; private set; }
-    public XbfProperty[] PropertyTable { get; private set; }
-    public string[] XmlNamespaceTable { get; private set; }
-    public XbfNodeSection[] NodeSectionTable { get; private set; }
-    public XbfObject RootObject { get; private set; }
+    public XbfHeader Header { get; }
+    public string[] StringTable { get; }
+    public XbfAssembly[] AssemblyTable { get; }
+    public XbfTypeNamespace[] TypeNamespaceTable { get; }
+    public XbfType[] TypeTable { get; }
+    public XbfProperty[] PropertyTable { get; }
+    public string[] XmlNamespaceTable { get; }
+    public XbfNodeSection[] NodeSectionTable { get; }
+    public XbfObject RootObject { get; }
 
     private int _firstNodeSectionPosition;
     private Dictionary<string, string> _namespacePrefixes = new Dictionary<string, string>();
@@ -27,7 +27,7 @@ public class XbfReader
         using (var reader = new BinaryReaderEx(fileStream, Encoding.Unicode))
         {
             Header = new XbfHeader(reader);
-            ReadStringTable(reader);
+            StringTable = ReadStringTable(reader);
             AssemblyTable = ReadTable(reader, r => new XbfAssembly(this, r));
             TypeNamespaceTable = ReadTable(reader, r => new XbfTypeNamespace(this, r));
             TypeTable = ReadTable(reader, r => new XbfType(this, r));
@@ -65,7 +65,7 @@ public class XbfReader
         return new string(reader.ReadChars(reader.ReadInt32()));
     }
 
-    private void ReadStringTable(BinaryReader reader)
+    private string[] ReadStringTable(BinaryReader reader)
     {
         int stringCount = reader.ReadInt32();
         string[] stringTable = new string[stringCount];
@@ -82,7 +82,7 @@ public class XbfReader
                     throw new InvalidDataException("Unexpected value");
         }
         
-        StringTable = stringTable;
+        return stringTable;
     }
 
     private T[] ReadTable<T>(BinaryReader reader, Func<BinaryReader, T> objectGenerator)

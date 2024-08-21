@@ -11,9 +11,9 @@ public class XbfType
         Name = xbf.StringTable[nameID];
     }
 
-    public XbfTypeFlags Flags { get; private set; }
-    public XbfTypeNamespace Namespace { get; private set; }
-    public string Name { get; private set; }
+    public XbfTypeFlags Flags { get; }
+    public XbfTypeNamespace Namespace { get; }
+    public string Name { get; }
 }
 
 public enum XbfTypeFlags

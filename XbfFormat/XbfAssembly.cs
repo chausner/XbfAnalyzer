@@ -9,8 +9,8 @@ public class XbfAssembly
         Name = xbf.StringTable[stringID];
     }
 
-    public XbfAssemblyKind Kind { get; private set; }
-    public string Name { get; private set; }
+    public XbfAssemblyKind Kind { get; }
+    public string Name { get; }
 }
 
 public enum XbfAssemblyKind

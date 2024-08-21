@@ -8,6 +8,6 @@ public class XbfNodeSection
         PositionalOffset = reader.ReadInt32();
     }
 
-    public int NodeOffset { get; private set; }
-    public int PositionalOffset { get; private set; }
+    public int NodeOffset { get; }
+    public int PositionalOffset { get; }
 }

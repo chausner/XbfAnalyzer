@@ -23,16 +23,16 @@ public class XbfHeader
         Hash = new string(reader.ReadChars(32));
     }
 
-    public byte[] MagicNumber { get; private set; }
-    public uint MetadataSize { get; private set; }
-    public uint NodeSize { get; private set; }
-    public uint MajorFileVersion { get; private set; }
-    public uint MinorFileVersion { get; private set; }
-    public ulong StringTableOffset { get; private set; }
-    public ulong AssemblyTableOffset { get; private set; }
-    public ulong TypeNamespaceTableOffset { get; private set; }
-    public ulong TypeTableOffset { get; private set; }
-    public ulong PropertyTableOffset { get; private set; }
-    public ulong XmlNamespaceTableOffset { get; private set; }
-    public string Hash { get; private set; }
+    public byte[] MagicNumber { get; }
+    public uint MetadataSize { get; }
+    public uint NodeSize { get; }
+    public uint MajorFileVersion { get; }
+    public uint MinorFileVersion { get; }
+    public ulong StringTableOffset { get; }
+    public ulong AssemblyTableOffset { get; }
+    public ulong TypeNamespaceTableOffset { get; }
+    public ulong TypeTableOffset { get; }
+    public ulong PropertyTableOffset { get; }
+    public ulong XmlNamespaceTableOffset { get; }
+    public string Hash { get; }
 }

@@ -10,6 +10,6 @@ public class XbfTypeNamespace
         Name = xbf.StringTable[nameID];
     }
 
-    public XbfAssembly Assembly { get; private set; }
-    public string Name { get; private set; }
+    public XbfAssembly Assembly { get; }
+    public string Name { get; }
 }
