@@ -20,19 +20,19 @@ public class XbfHeader
         TypeTableOffset = reader.ReadUInt64();
         PropertyTableOffset = reader.ReadUInt64();
         XmlNamespaceTableOffset = reader.ReadUInt64();
-        Hash = reader.ReadChars(32);
+        Hash = new string(reader.ReadChars(32));
     }
 
     public byte[] MagicNumber { get; private set; }
-    public UInt32 MetadataSize { get; private set; }
-    public UInt32 NodeSize { get; private set; }
-    public UInt32 MajorFileVersion { get; private set; }
-    public UInt32 MinorFileVersion { get; private set; }
-    public UInt64 StringTableOffset { get; private set; }
-    public UInt64 AssemblyTableOffset { get; private set; }
-    public UInt64 TypeNamespaceTableOffset { get; private set; }
-    public UInt64 TypeTableOffset { get; private set; }
-    public UInt64 PropertyTableOffset { get; private set; }
-    public UInt64 XmlNamespaceTableOffset { get; private set; }
-    public char[] Hash { get; private set; }
+    public uint MetadataSize { get; private set; }
+    public uint NodeSize { get; private set; }
+    public uint MajorFileVersion { get; private set; }
+    public uint MinorFileVersion { get; private set; }
+    public ulong StringTableOffset { get; private set; }
+    public ulong AssemblyTableOffset { get; private set; }
+    public ulong TypeNamespaceTableOffset { get; private set; }
+    public ulong TypeTableOffset { get; private set; }
+    public ulong PropertyTableOffset { get; private set; }
+    public ulong XmlNamespaceTableOffset { get; private set; }
+    public string Hash { get; private set; }
 }
