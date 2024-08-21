@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace XbfAnalyzer.Xbf
 {
-    public class BinaryReaderEx : BinaryReader
+    internal class BinaryReaderEx : BinaryReader
     {
         public BinaryReaderEx(Stream input) : base(input) { }
         public BinaryReaderEx(Stream input, Encoding encoding) : base(input, encoding) { }

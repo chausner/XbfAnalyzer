@@ -9,4 +9,7 @@
   <ItemGroup>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XbfFormat\XbfFormat.csproj" />
+  </ItemGroup>
 </Project>

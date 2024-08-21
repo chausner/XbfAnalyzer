@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace XbfAnalyzer.Xbf
 {
-    public static class XbfFrameworkTypes
+    internal static class XbfFrameworkTypes
     {
         public static string GetNameForTypeID(int id)
         {
