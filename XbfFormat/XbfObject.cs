@@ -4,10 +4,10 @@ namespace XbfAnalyzer.Xbf;
 
 public class XbfObject
 {
-    public string TypeName { get; set; }
-    public string Name { get; set; }
-    public string Uid { get; set; }
-    public string Key { get; set; }
+    public string? TypeName { get; set; }
+    public string? Name { get; set; }
+    public string? Uid { get; set; }
+    public string? Key { get; set; }
     public int ConnectionID { get; set; }
 
     public List<XbfObjectProperty> Properties { get; } = new List<XbfObjectProperty>();
@@ -82,10 +82,12 @@ public class XbfObject
             sb.AppendFormat(indent + _indent + "<{0}>", propertyName);
             sb.AppendLine();
 
-            if (property.Value is XbfObject)
-                sb.AppendLine(((XbfObject)property.Value).ToString(indentLevel + 2));
-            else
+            if (property.Value is XbfObject obj)
+                sb.AppendLine(obj.ToString(indentLevel + 2));
+            else if (collection != null)
                 sb.Append(collection.ToString(indentLevel + 2));
+            else
+                throw new Exception($"Invalid property value of property {property.Name}");
 
             sb.AppendFormat(indent + _indent + "</{0}>", propertyName);
             sb.AppendLine();

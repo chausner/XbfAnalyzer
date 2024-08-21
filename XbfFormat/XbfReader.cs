@@ -12,8 +12,8 @@ public class XbfReader
     public XbfType[] TypeTable { get; }
     public XbfProperty[] PropertyTable { get; }
     public string[] XmlNamespaceTable { get; }
-    public XbfNodeSection[] NodeSectionTable { get; }
-    public XbfObject RootObject { get; }
+    public XbfNodeSection[]? NodeSectionTable { get; }
+    public XbfObject? RootObject { get; }
 
     private int _firstNodeSectionPosition;
     private Dictionary<string, string> _namespacePrefixes = new();
@@ -101,7 +101,7 @@ public class XbfReader
         if (Header.MajorFileVersion != 2)
             throw new NotSupportedException("Only XBF v2 files are supported.");
 
-        int startPosition = _firstNodeSectionPosition + NodeSectionTable[0].NodeOffset;
+        int startPosition = _firstNodeSectionPosition + NodeSectionTable![0].NodeOffset;
         int endPosition = _firstNodeSectionPosition + NodeSectionTable[0].PositionalOffset;
 
         reader.BaseStream.Seek(startPosition, SeekOrigin.Begin);
@@ -189,7 +189,7 @@ public class XbfReader
 
     private void ReadNodes(BinaryReaderEx reader, int endPosition, bool readSingleObject = false, bool readSingleNode = false)
     {
-        XbfObject singleObject = null;
+        XbfObject? singleObject = null;
         while (reader.BaseStream.Position < endPosition)
         {
             byte nodeType = reader.ReadByte();
@@ -436,7 +436,7 @@ public class XbfReader
     private void ReadNodeSectionReference(BinaryReaderEx reader)
     {
         // The node section we're skipping to
-        XbfNodeSection nodeSection = NodeSectionTable[reader.Read7BitEncodedInt()];
+        XbfNodeSection nodeSection = NodeSectionTable![reader.Read7BitEncodedInt()];
 
         if (reader.ReadUInt16() != 0) // TODO: unknown purpose
             throw new InvalidDataException($"Unexpected value");
@@ -480,7 +480,7 @@ public class XbfReader
     {
         string propertyName = GetPropertyName(reader.ReadUInt16()); // Always "Template"
 
-        XbfNodeSection nodeSection = NodeSectionTable[reader.Read7BitEncodedInt()];
+        XbfNodeSection nodeSection = NodeSectionTable![reader.Read7BitEncodedInt()];
 
         // List of StaticResources and ThemeResources referenced from inside the DataTemplate
         int staticResourceCount = reader.Read7BitEncodedInt();
@@ -508,9 +508,9 @@ public class XbfReader
         {
             int valueType = reader.ReadByte();
 
-            string propertyName = null;
-            string typeName = null; // Name of type implementing the property, currently ignored
-            object propertyValue = null;
+            string propertyName;
+            string typeName; // Name of type implementing the property, currently ignored
+            object? propertyValue = null;
             int valueOffset = 0;
 
             switch (valueType)

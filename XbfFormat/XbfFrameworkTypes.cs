@@ -2,7 +2,7 @@
 
 internal static class XbfFrameworkTypes
 {
-    public static string GetNameForTypeID(int id)
+    public static string? GetNameForTypeID(int id)
     {
         if (id - 1 >= 0 && id - 1 < typeNames.Length)
             return typeNames[id - 1];
@@ -10,7 +10,7 @@ internal static class XbfFrameworkTypes
             return null;
     }
 
-    public static string GetNameForPropertyID(int id)
+    public static string? GetNameForPropertyID(int id)
     {
         if (id - 1 >= 0 && id - 1 < propertyNames.Length)
             return propertyNames[id - 1];
@@ -18,9 +18,9 @@ internal static class XbfFrameworkTypes
             return null;
     }
 
-    public static string GetNameForEnumValue(int id, int value)
+    public static string? GetNameForEnumValue(int id, int value)
     {
-        Dictionary<int, string> ev;
+        Dictionary<int, string>? ev;
 
         if (id - 0x023C >= 0 && id - 0x023C < enumValues.Length)
             ev = enumValues[id - 0x023C];
@@ -30,7 +30,7 @@ internal static class XbfFrameworkTypes
         if (ev == null)
             return null;
 
-        string name;
+        string? name;
 
         if (ev.TryGetValue(value, out name))
             return name;
@@ -61,7 +61,7 @@ internal static class XbfFrameworkTypes
     // mappings are hard-coded in GenXbf.dll from Windows SDK
     // up-to-date as of SDK version 10.0.26100.0
 
-    private static readonly string[] typeNames = {
+    private static readonly string?[] typeNames = {
         /* 0x0001 */ "Byte", // Windows.Foundation.Byte
         /* 0x0002 */ "Char16", // Windows.Foundation.Char16
         /* 0x0003 */ "DateTime", // Windows.Foundation.DateTime
@@ -1041,7 +1041,7 @@ internal static class XbfFrameworkTypes
         /* 0x03D1 */ "SeekSliderAutomationPeer", // Windows.UI.Xaml.Automation.Peers.SeekSliderAutomationPeer
     };
 
-    private static readonly string[] propertyNames = {
+    private static readonly string?[] propertyNames = {
         /* 0x0001 */ "Index", // Windows.UI.Xaml.Controls.Primitives.GeneratorPosition
         /* 0x0002 */ "Offset", // Windows.UI.Xaml.Controls.Primitives.GeneratorPosition
         /* 0x0003 */ "Kind", // Windows.UI.Xaml.Interop.TypeName
@@ -3499,7 +3499,7 @@ internal static class XbfFrameworkTypes
         /* 0x0997 */ "AutomationControlType", // Windows.UI.Xaml.Automation.AutomationProperties
     };
 
-    private static readonly Dictionary<int, string>[] enumValues = {
+    private static readonly Dictionary<int, string>?[] enumValues = {
         /* 0x023C */ new() { { 0, "Raw" }, { 1, "Control" }, { 2, "Content" } }, // Windows.UI.Xaml.Automation.Peers.AccessibilityView
         /* 0x023D */ new() { { 0, "Left" }, { 1, "Center" }, { 2, "Right" } }, // Windows.UI.Xaml.Media.AlignmentX
         /* 0x023E */ new() { { 0, "Top" }, { 1, "Center" }, { 2, "Bottom" } }, // Windows.UI.Xaml.Media.AlignmentY
