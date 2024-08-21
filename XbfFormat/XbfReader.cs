@@ -16,10 +16,10 @@ public class XbfReader
     public XbfObject RootObject { get; }
 
     private int _firstNodeSectionPosition;
-    private Dictionary<string, string> _namespacePrefixes = new Dictionary<string, string>();
-    private Stack<XbfObject> _rootObjectStack = new Stack<XbfObject>();
-    private Stack<XbfObject> _objectStack = new Stack<XbfObject>();
-    private Stack<XbfObjectCollection> _objectCollectionStack = new Stack<XbfObjectCollection>();
+    private Dictionary<string, string> _namespacePrefixes = new();
+    private Stack<XbfObject> _rootObjectStack = new();
+    private Stack<XbfObject> _objectStack = new();
+    private Stack<XbfObjectCollection> _objectCollectionStack = new();
 
     public XbfReader(string path)
     {

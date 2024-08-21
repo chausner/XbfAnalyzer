@@ -3500,127 +3500,127 @@ internal static class XbfFrameworkTypes
     };
 
     private static readonly Dictionary<int, string>[] enumValues = {
-        /* 0x023C */ new Dictionary<int, string> { { 0, "Raw" }, { 1, "Control" }, { 2, "Content" } }, // Windows.UI.Xaml.Automation.Peers.AccessibilityView
-        /* 0x023D */ new Dictionary<int, string> { { 0, "Left" }, { 1, "Center" }, { 2, "Right" } }, // Windows.UI.Xaml.Media.AlignmentX
-        /* 0x023E */ new Dictionary<int, string> { { 0, "Top" }, { 1, "Center" }, { 2, "Bottom" } }, // Windows.UI.Xaml.Media.AlignmentY
-        /* 0x023F */ new Dictionary<int, string> { { 0, "Left" }, { 1, "Top" }, { 2, "Right" }, { 3, "Bottom" } }, // Windows.UI.Xaml.Controls.Primitives.AnimationDirection
-        /* 0x0240 */ new Dictionary<int, string> { { 60000, "Unknown" }, { 60001, "SpellingError" }, { 60002, "GrammarError" }, { 60003, "Comment" }, { 60004, "FormulaError" }, { 60005, "TrackChanges" }, { 60006, "Header" }, { 60007, "Footer" }, { 60008, "Highlighted" }, { 60009, "Endnote" }, { 60010, "Footnote" }, { 60011, "InsertionChange" }, { 60012, "DeletionChange" }, { 60013, "MoveChange" }, { 60014, "FormatChange" }, { 60015, "UnsyncedChange" }, { 60016, "EditingLockedChange" }, { 60017, "ExternalChange" }, { 60018, "ConflictingChange" }, { 60019, "Author" }, { 60020, "AdvancedProofingIssue" }, { 60021, "DataValidationError" }, { 60022, "CircularReferenceError" } }, // Windows.UI.Xaml.Automation.AnnotationType
-        /* 0x0241 */ new Dictionary<int, string> { { 0, "Compact" }, { 1, "Minimal" }, { 2, "Hidden" } }, // Windows.UI.Xaml.Controls.AppBarClosedDisplayMode
-        /* 0x0242 */ new Dictionary<int, string> { { 0, "Light" }, { 1, "Dark" } }, // Windows.UI.Xaml.ApplicationTheme
-        /* 0x0243 */ new Dictionary<int, string> { { 0, "Other" }, { 1, "ForegroundOnlyMedia" }, { 2, "BackgroundCapableMedia" }, { 3, "Communications" }, { 4, "Alerts" }, { 5, "SoundEffects" }, { 6, "GameEffects" }, { 7, "GameMedia" }, { 8, "GameChat" }, { 9, "Speech" }, { 10, "Movie" }, { 11, "Media" } }, // Windows.UI.Xaml.Media.AudioCategory
-        /* 0x0244 */ new Dictionary<int, string> { { 0, "Console" }, { 1, "Multimedia" }, { 2, "Communications" } }, // Windows.UI.Xaml.Media.AudioDeviceType
-        /* 0x0245 */ new Dictionary<int, string> { { 0, "Button" }, { 1, "Calendar" }, { 2, "CheckBox" }, { 3, "ComboBox" }, { 4, "Edit" }, { 5, "Hyperlink" }, { 6, "Image" }, { 7, "ListItem" }, { 8, "List" }, { 9, "Menu" }, { 10, "MenuBar" }, { 11, "MenuItem" }, { 12, "ProgressBar" }, { 13, "RadioButton" }, { 14, "ScrollBar" }, { 15, "Slider" }, { 16, "Spinner" }, { 17, "StatusBar" }, { 18, "Tab" }, { 19, "TabItem" }, { 20, "Text" }, { 21, "ToolBar" }, { 22, "ToolTip" }, { 23, "Tree" }, { 24, "TreeItem" }, { 25, "Custom" }, { 26, "Group" }, { 27, "Thumb" }, { 28, "DataGrid" }, { 29, "DataItem" }, { 30, "Document" }, { 31, "SplitButton" }, { 32, "Window" }, { 33, "Pane" }, { 34, "Header" }, { 35, "HeaderItem" }, { 36, "Table" }, { 37, "TitleBar" }, { 38, "Separator" }, { 39, "SemanticZoom" }, { 40, "AppBar" } }, // Windows.UI.Xaml.Automation.Peers.AutomationControlType
-        /* 0x0246 */ new Dictionary<int, string> { { 0, "ToolTipOpened" }, { 1, "ToolTipClosed" }, { 2, "MenuOpened" }, { 3, "MenuClosed" }, { 4, "AutomationFocusChanged" }, { 5, "InvokePatternOnInvoked" }, { 6, "SelectionItemPatternOnElementAddedToSelection" }, { 7, "SelectionItemPatternOnElementRemovedFromSelection" }, { 8, "SelectionItemPatternOnElementSelected" }, { 9, "SelectionPatternOnInvalidated" }, { 10, "TextPatternOnTextSelectionChanged" }, { 11, "TextPatternOnTextChanged" }, { 12, "AsyncContentLoaded" }, { 13, "PropertyChanged" }, { 14, "StructureChanged" }, { 15, "DragStart" }, { 16, "DragCancel" }, { 17, "DragComplete" }, { 18, "DragEnter" }, { 19, "DragLeave" }, { 20, "Dropped" }, { 21, "LiveRegionChanged" }, { 22, "InputReachedTarget" }, { 23, "InputReachedOtherElement" }, { 24, "InputDiscarded" }, { 25, "WindowClosed" }, { 26, "WindowOpened" }, { 27, "ConversionTargetChanged" }, { 28, "TextEditTextChanged" }, { 29, "LayoutInvalidated" } }, // Windows.UI.Xaml.Automation.Peers.AutomationEvents
-        /* 0x0247 */ new Dictionary<int, string> { { 0, "Off" }, { 1, "Polite" }, { 2, "Assertive" } }, // Windows.UI.Xaml.Automation.Peers.AutomationLiveSetting
-        /* 0x0248 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Horizontal" }, { 2, "Vertical" } }, // Windows.UI.Xaml.Automation.Peers.AutomationOrientation
-        /* 0x0249 */ new Dictionary<int, string> { { 0, "UserInput" }, { 1, "ProgrammaticChange" }, { 2, "SuggestionChosen" } }, // Windows.UI.Xaml.Controls.AutoSuggestionBoxTextChangeReason
-        /* 0x024A */ new Dictionary<int, string> { { 1, "OneWay" }, { 2, "OneTime" }, { 3, "TwoWay" } }, // Windows.UI.Xaml.Data.BindingMode
-        /* 0x024B */ new Dictionary<int, string> { { 0, "None" }, { 8, "IgnoreImageCache" } }, // Windows.UI.Xaml.Media.Imaging.BitmapCreateOptions
-        /* 0x024C */ new Dictionary<int, string> { { 0, "Absolute" }, { 1, "RelativeToBoundingBox" } }, // Windows.UI.Xaml.Media.BrushMappingMode
-        /* 0x024D */ new Dictionary<int, string> { { 0, "Release" }, { 1, "Press" }, { 2, "Hover" } }, // Windows.UI.Xaml.Controls.ClickMode
-        /* 0x024E */ new Dictionary<int, string> { { 0, "Active" }, { 1, "Filling" }, { 2, "Stopped" }, { 3, "NotStarted" } }, // Windows.UI.Xaml.Media.Animation.ClockState
+        /* 0x023C */ new() { { 0, "Raw" }, { 1, "Control" }, { 2, "Content" } }, // Windows.UI.Xaml.Automation.Peers.AccessibilityView
+        /* 0x023D */ new() { { 0, "Left" }, { 1, "Center" }, { 2, "Right" } }, // Windows.UI.Xaml.Media.AlignmentX
+        /* 0x023E */ new() { { 0, "Top" }, { 1, "Center" }, { 2, "Bottom" } }, // Windows.UI.Xaml.Media.AlignmentY
+        /* 0x023F */ new() { { 0, "Left" }, { 1, "Top" }, { 2, "Right" }, { 3, "Bottom" } }, // Windows.UI.Xaml.Controls.Primitives.AnimationDirection
+        /* 0x0240 */ new() { { 60000, "Unknown" }, { 60001, "SpellingError" }, { 60002, "GrammarError" }, { 60003, "Comment" }, { 60004, "FormulaError" }, { 60005, "TrackChanges" }, { 60006, "Header" }, { 60007, "Footer" }, { 60008, "Highlighted" }, { 60009, "Endnote" }, { 60010, "Footnote" }, { 60011, "InsertionChange" }, { 60012, "DeletionChange" }, { 60013, "MoveChange" }, { 60014, "FormatChange" }, { 60015, "UnsyncedChange" }, { 60016, "EditingLockedChange" }, { 60017, "ExternalChange" }, { 60018, "ConflictingChange" }, { 60019, "Author" }, { 60020, "AdvancedProofingIssue" }, { 60021, "DataValidationError" }, { 60022, "CircularReferenceError" } }, // Windows.UI.Xaml.Automation.AnnotationType
+        /* 0x0241 */ new() { { 0, "Compact" }, { 1, "Minimal" }, { 2, "Hidden" } }, // Windows.UI.Xaml.Controls.AppBarClosedDisplayMode
+        /* 0x0242 */ new() { { 0, "Light" }, { 1, "Dark" } }, // Windows.UI.Xaml.ApplicationTheme
+        /* 0x0243 */ new() { { 0, "Other" }, { 1, "ForegroundOnlyMedia" }, { 2, "BackgroundCapableMedia" }, { 3, "Communications" }, { 4, "Alerts" }, { 5, "SoundEffects" }, { 6, "GameEffects" }, { 7, "GameMedia" }, { 8, "GameChat" }, { 9, "Speech" }, { 10, "Movie" }, { 11, "Media" } }, // Windows.UI.Xaml.Media.AudioCategory
+        /* 0x0244 */ new() { { 0, "Console" }, { 1, "Multimedia" }, { 2, "Communications" } }, // Windows.UI.Xaml.Media.AudioDeviceType
+        /* 0x0245 */ new() { { 0, "Button" }, { 1, "Calendar" }, { 2, "CheckBox" }, { 3, "ComboBox" }, { 4, "Edit" }, { 5, "Hyperlink" }, { 6, "Image" }, { 7, "ListItem" }, { 8, "List" }, { 9, "Menu" }, { 10, "MenuBar" }, { 11, "MenuItem" }, { 12, "ProgressBar" }, { 13, "RadioButton" }, { 14, "ScrollBar" }, { 15, "Slider" }, { 16, "Spinner" }, { 17, "StatusBar" }, { 18, "Tab" }, { 19, "TabItem" }, { 20, "Text" }, { 21, "ToolBar" }, { 22, "ToolTip" }, { 23, "Tree" }, { 24, "TreeItem" }, { 25, "Custom" }, { 26, "Group" }, { 27, "Thumb" }, { 28, "DataGrid" }, { 29, "DataItem" }, { 30, "Document" }, { 31, "SplitButton" }, { 32, "Window" }, { 33, "Pane" }, { 34, "Header" }, { 35, "HeaderItem" }, { 36, "Table" }, { 37, "TitleBar" }, { 38, "Separator" }, { 39, "SemanticZoom" }, { 40, "AppBar" } }, // Windows.UI.Xaml.Automation.Peers.AutomationControlType
+        /* 0x0246 */ new() { { 0, "ToolTipOpened" }, { 1, "ToolTipClosed" }, { 2, "MenuOpened" }, { 3, "MenuClosed" }, { 4, "AutomationFocusChanged" }, { 5, "InvokePatternOnInvoked" }, { 6, "SelectionItemPatternOnElementAddedToSelection" }, { 7, "SelectionItemPatternOnElementRemovedFromSelection" }, { 8, "SelectionItemPatternOnElementSelected" }, { 9, "SelectionPatternOnInvalidated" }, { 10, "TextPatternOnTextSelectionChanged" }, { 11, "TextPatternOnTextChanged" }, { 12, "AsyncContentLoaded" }, { 13, "PropertyChanged" }, { 14, "StructureChanged" }, { 15, "DragStart" }, { 16, "DragCancel" }, { 17, "DragComplete" }, { 18, "DragEnter" }, { 19, "DragLeave" }, { 20, "Dropped" }, { 21, "LiveRegionChanged" }, { 22, "InputReachedTarget" }, { 23, "InputReachedOtherElement" }, { 24, "InputDiscarded" }, { 25, "WindowClosed" }, { 26, "WindowOpened" }, { 27, "ConversionTargetChanged" }, { 28, "TextEditTextChanged" }, { 29, "LayoutInvalidated" } }, // Windows.UI.Xaml.Automation.Peers.AutomationEvents
+        /* 0x0247 */ new() { { 0, "Off" }, { 1, "Polite" }, { 2, "Assertive" } }, // Windows.UI.Xaml.Automation.Peers.AutomationLiveSetting
+        /* 0x0248 */ new() { { 0, "None" }, { 1, "Horizontal" }, { 2, "Vertical" } }, // Windows.UI.Xaml.Automation.Peers.AutomationOrientation
+        /* 0x0249 */ new() { { 0, "UserInput" }, { 1, "ProgrammaticChange" }, { 2, "SuggestionChosen" } }, // Windows.UI.Xaml.Controls.AutoSuggestionBoxTextChangeReason
+        /* 0x024A */ new() { { 1, "OneWay" }, { 2, "OneTime" }, { 3, "TwoWay" } }, // Windows.UI.Xaml.Data.BindingMode
+        /* 0x024B */ new() { { 0, "None" }, { 8, "IgnoreImageCache" } }, // Windows.UI.Xaml.Media.Imaging.BitmapCreateOptions
+        /* 0x024C */ new() { { 0, "Absolute" }, { 1, "RelativeToBoundingBox" } }, // Windows.UI.Xaml.Media.BrushMappingMode
+        /* 0x024D */ new() { { 0, "Release" }, { 1, "Press" }, { 2, "Hover" } }, // Windows.UI.Xaml.Controls.ClickMode
+        /* 0x024E */ new() { { 0, "Active" }, { 1, "Filling" }, { 2, "Stopped" }, { 3, "NotStarted" } }, // Windows.UI.Xaml.Media.Animation.ClockState
         /* 0x024F */ null,
-        /* 0x0250 */ new Dictionary<int, string> { { 0, "Reset" }, { 1, "ItemInserted" }, { 2, "ItemRemoved" }, { 3, "ItemChanged" } }, // Windows.Foundation.Collections.CollectionChange
-        /* 0x0251 */ new Dictionary<int, string> { { 0, "ScRgbLinearInterpolation" }, { 1, "SRgbLinearInterpolation" } }, // Windows.UI.Xaml.Media.ColorInterpolationMode
-        /* 0x0252 */ new Dictionary<int, string> { { 0, "Application" }, { 1, "Nested" } }, // Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation
-        /* 0x0253 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Primary" }, { 2, "Secondary" } }, // Windows.UI.Xaml.Controls.ContentDialogResult
-        /* 0x0254 */ new Dictionary<int, string> { { 0, "Physical" }, { 1, "Logical" } }, // Windows.UI.Xaml.Media.Imaging.DecodePixelType
-        /* 0x0255 */ new Dictionary<int, string> { { 0, "Top" }, { 1, "Left" }, { 2, "Bottom" }, { 3, "Right" }, { 4, "Fill" }, { 5, "None" } }, // Windows.UI.Xaml.Automation.DockPosition
-        /* 0x0256 */ new Dictionary<int, string> { { 0, "EaseOut" }, { 1, "EaseIn" }, { 2, "EaseInOut" } }, // Windows.UI.Xaml.Media.Animation.EasingMode
-        /* 0x0257 */ new Dictionary<int, string> { { 0, "Left" }, { 1, "Top" }, { 2, "Right" }, { 3, "Bottom" } }, // Windows.UI.Xaml.Controls.Primitives.EdgeTransitionLocation
-        /* 0x0258 */ new Dictionary<int, string> { { 0, "Inherit" }, { 1, "SourceOver" }, { 2, "MinBlend" }, { 3, "DestInvert" } }, // Windows.UI.Xaml.Media.ElementCompositeMode
-        /* 0x0259 */ new Dictionary<int, string> { { 0, "Default" }, { 1, "Light" }, { 2, "Dark" } }, // Windows.UI.Xaml.ElementTheme
-        /* 0x025A */ new Dictionary<int, string> { { 0, "Collapsed" }, { 1, "Expanded" }, { 2, "PartiallyExpanded" }, { 3, "LeafNode" } }, // Windows.UI.Xaml.Automation.ExpandCollapseState
-        /* 0x025B */ new Dictionary<int, string> { { 0, "HoldEnd" }, { 1, "Stop" } }, // Windows.UI.Xaml.Media.Animation.FillBehavior
-        /* 0x025C */ new Dictionary<int, string> { { 0, "EvenOdd" }, { 1, "Nonzero" } }, // Windows.UI.Xaml.Media.FillRule
-        /* 0x025D */ new Dictionary<int, string> { { 0, "LeftToRight" }, { 1, "RightToLeft" } }, // Windows.UI.Xaml.FlowDirection
-        /* 0x025E */ new Dictionary<int, string> { { 0, "Top" }, { 1, "Bottom" }, { 2, "Left" }, { 3, "Right" }, { 4, "Full" }, { 5, "TopEdgeAlignedLeft" }, { 6, "TopEdgeAlignedRight" }, { 7, "BottomEdgeAlignedLeft" }, { 8, "BottomEdgeAlignedRight" }, { 9, "LeftEdgeAlignedTop" }, { 10, "LeftEdgeAlignedBottom" }, { 11, "RightEdgeAlignedTop" }, { 12, "RightEdgeAlignedBottom" }, { 13, "Auto" } }, // Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode
-        /* 0x025F */ new Dictionary<int, string> { { 0, "Next" }, { 1, "Previous" }, { 2, "Up" }, { 3, "Down" }, { 4, "Left" }, { 5, "Right" }, { 6, "None" } }, // Windows.UI.Xaml.Input.FocusNavigationDirection
-        /* 0x0260 */ new Dictionary<int, string> { { 0, "Unfocused" }, { 1, "Pointer" }, { 2, "Keyboard" }, { 3, "Programmatic" } }, // Windows.UI.Xaml.FocusState
-        /* 0x0261 */ new Dictionary<int, string> { { 0, "Normal" }, { 1, "AllSmallCaps" }, { 2, "SmallCaps" }, { 3, "AllPetiteCaps" }, { 4, "PetiteCaps" }, { 5, "Unicase" }, { 6, "Titling" } }, // Windows.UI.Xaml.FontCapitals
-        /* 0x0262 */ new Dictionary<int, string> { { 0, "Normal" }, { 1, "HojoKanji" }, { 2, "Jis04" }, { 3, "Jis78" }, { 4, "Jis83" }, { 5, "Jis90" }, { 6, "NlcKanji" }, { 7, "Simplified" }, { 8, "Traditional" }, { 9, "TraditionalNames" } }, // Windows.UI.Xaml.FontEastAsianLanguage
-        /* 0x0263 */ new Dictionary<int, string> { { 0, "Normal" }, { 1, "Full" }, { 2, "Half" }, { 3, "Proportional" }, { 4, "Quarter" }, { 5, "Third" } }, // Windows.UI.Xaml.FontEastAsianWidths
-        /* 0x0264 */ new Dictionary<int, string> { { 0, "Normal" }, { 1, "Stacked" }, { 2, "Slashed" } }, // Windows.UI.Xaml.FontFraction
-        /* 0x0265 */ new Dictionary<int, string> { { 0, "Normal" }, { 1, "Proportional" }, { 2, "Tabular" } }, // Windows.UI.Xaml.FontNumeralAlignment
-        /* 0x0266 */ new Dictionary<int, string> { { 0, "Normal" }, { 1, "Lining" }, { 2, "OldStyle" } }, // Windows.UI.Xaml.FontNumeralStyle
-        /* 0x0267 */ new Dictionary<int, string> { { 0, "Undefined" }, { 1, "UltraCondensed" }, { 2, "ExtraCondensed" }, { 3, "Condensed" }, { 4, "SemiCondensed" }, { 5, "Normal" }, { 6, "SemiExpanded" }, { 7, "Expanded" }, { 8, "ExtraExpanded" }, { 9, "UltraExpanded" } }, // Windows.UI.Text.FontStretch
-        /* 0x0268 */ new Dictionary<int, string> { { 0, "Normal" }, { 1, "Oblique" }, { 2, "Italic" } }, // Windows.UI.Text.FontStyle
-        /* 0x0269 */ new Dictionary<int, string> { { 0, "Normal" }, { 1, "Superscript" }, { 2, "Subscript" }, { 3, "Ordinal" }, { 4, "Inferior" }, { 5, "Ruby" } }, // Windows.UI.Xaml.FontVariants
-        /* 0x026A */ new Dictionary<int, string> { { 0, "Forward" }, { 1, "Backward" } }, // Windows.UI.Xaml.Controls.Primitives.GeneratorDirection
-        /* 0x026B */ new Dictionary<int, string> { { 0, "None" }, { 1, "Tapped" }, { 2, "DoubleTapped" }, { 3, "RightTapped" }, { 4, "Holding" } }, // Windows.UI.Xaml.Input.GestureModes
-        /* 0x026C */ new Dictionary<int, string> { { 0, "Pad" }, { 1, "Reflect" }, { 2, "Repeat" } }, // Windows.UI.Xaml.Media.GradientSpreadMethod
-        /* 0x026D */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "Pixel" }, { 2, "Star" } }, // Windows.UI.Xaml.GridUnitType
-        /* 0x026E */ new Dictionary<int, string> { { 0, "Top" }, { 1, "Left" } }, // Windows.UI.Xaml.Controls.Primitives.GroupHeaderPlacement
-        /* 0x026F */ new Dictionary<int, string> { { 0, "Started" }, { 1, "Completed" }, { 2, "Canceled" } }, // Windows.UI.Input.HoldingState
-        /* 0x0270 */ new Dictionary<int, string> { { 0, "Left" }, { 1, "Center" }, { 2, "Right" }, { 3, "Stretch" } }, // Windows.UI.Xaml.HorizontalAlignment
-        /* 0x0271 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Edge" } }, // Windows.UI.Xaml.Controls.IncrementalLoadingTrigger
-        /* 0x0272 */ new Dictionary<int, string> { { 0, "Default" }, { 1, "Url" }, { 5, "EmailSmtpAddress" }, { 7, "PersonalFullName" }, { 20, "CurrencyAmountAndSymbol" }, { 21, "CurrencyAmount" }, { 23, "DateMonthNumber" }, { 24, "DateDayNumber" }, { 25, "DateYear" }, { 28, "Digits" }, { 29, "Number" }, { 31, "Password" }, { 32, "TelephoneNumber" }, { 33, "TelephoneCountryCode" }, { 34, "TelephoneAreaCode" }, { 35, "TelephoneLocalNumber" }, { 37, "TimeHour" }, { 38, "TimeMinutesOrSeconds" }, { 39, "NumberFullWidth" }, { 40, "AlphanumericHalfWidth" }, { 41, "AlphanumericFullWidth" }, { 44, "Hiragana" }, { 45, "KatakanaHalfWidth" }, { 46, "KatakanaFullWidth" }, { 47, "Hanja" }, { 48, "HangulHalfWidth" }, { 49, "HangulFullWidth" }, { 50, "Search" }, { 51, "Formula" }, { 52, "SearchIncremental" }, { 53, "ChineseHalfWidth" }, { 54, "ChineseFullWidth" }, { 55, "NativeScript" }, { 57, "Text" }, { 58, "Chat" }, { 59, "NameOrPhoneNumber" }, { 60, "EmailNameOrAddress" }, { 61, "Private" }, { 62, "Maps" }, { 63, "NumericPassword" }, { 64, "NumericPin" }, { 65, "AlphanumericPin" }, { 67, "FormulaNumber" }, { 68, "ChatWithoutEmoji" } }, // Windows.UI.Xaml.Input.InputScopeNameValue
-        /* 0x0273 */ new Dictionary<int, string> { { 0, "KeepItemsInView" }, { 1, "KeepScrollOffset" }, { 2, "KeepLastItemInView" } }, // Windows.UI.Xaml.Controls.ItemsUpdatingScrollMode
-        /* 0x0274 */ new Dictionary<int, string> { { 0, "Local" }, { 1, "Cycle" }, { 2, "Once" } }, // Windows.UI.Xaml.Input.KeyboardNavigationMode
-        /* 0x0275 */ new Dictionary<int, string> { { 0, "MaxHeight" }, { 1, "BlockLineHeight" }, { 2, "BaselineToBaseline" } }, // Windows.UI.Xaml.LineStackingStrategy
-        /* 0x0276 */ new Dictionary<int, string> { { 0, "Disabled" }, { 1, "Enabled" } }, // Windows.UI.Xaml.Controls.ListViewReorderMode
-        /* 0x0277 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Single" }, { 2, "Multiple" }, { 3, "Extended" } }, // Windows.UI.Xaml.Controls.ListViewSelectionMode
-        /* 0x0278 */ new Dictionary<int, string> { { 0, "Backward" }, { 1, "Forward" } }, // Windows.UI.Xaml.Documents.LogicalDirection
-        /* 0x0279 */ new Dictionary<int, string> { { 0, "None" }, { 1, "TranslateX" }, { 2, "TranslateY" }, { 4, "TranslateRailsX" }, { 8, "TranslateRailsY" }, { 16, "Rotate" }, { 32, "Scale" }, { 64, "TranslateInertia" }, { 128, "RotateInertia" }, { 256, "ScaleInertia" }, { 65535, "All" }, { 65536, "System" } }, // Windows.UI.Xaml.Input.ManipulationModes
-        /* 0x027A */ new Dictionary<int, string> { { 0, "None" }, { 1, "Extension" }, { 2, "Binding" } }, // Windows.UI.Xaml.MarkupExtensionType
-        /* 0x027B */ new Dictionary<int, string> { { 0, "NotSupported" }, { 1, "Maybe" }, { 2, "Probably" } }, // Windows.UI.Xaml.Media.MediaCanPlayResponse
-        /* 0x027C */ new Dictionary<int, string> { { 0, "Closed" }, { 1, "Opening" }, { 2, "Buffering" }, { 3, "Playing" }, { 4, "Paused" }, { 5, "Stopped" } }, // Windows.UI.Xaml.Media.MediaElementState
-        /* 0x027D */ new Dictionary<int, string> { { 0, "Disabled" }, { 1, "Required" }, { 2, "Enabled" } }, // Windows.UI.Xaml.Navigation.NavigationCacheMode
-        /* 0x027E */ new Dictionary<int, string> { { 0, "New" }, { 1, "Back" }, { 2, "Forward" }, { 3, "Refresh" } }, // Windows.UI.Xaml.Navigation.NavigationMode
-        /* 0x027F */ new Dictionary<int, string> { { 0, "Add" }, { 1, "Remove" }, { 2, "Replace" }, { 3, "Move" }, { 4, "Reset" } }, // Windows.UI.Xaml.Interop.NotifyCollectionChangedAction
-        /* 0x0280 */ new Dictionary<int, string> { { 0, "None" }, { 1, "TrimSideBearings" } }, // Windows.UI.Xaml.OpticalMarginAlignment
-        /* 0x0281 */ new Dictionary<int, string> { { 0, "Vertical" }, { 1, "Horizontal" } }, // Windows.UI.Xaml.Controls.Orientation
-        /* 0x0282 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Forward" }, { 2, "Backward" } }, // Windows.UI.Xaml.Controls.PanelScrollingDirection
-        /* 0x0283 */ new Dictionary<int, string> { { 0, "Invoke" }, { 1, "Selection" }, { 2, "Value" }, { 3, "RangeValue" }, { 4, "Scroll" }, { 5, "ScrollItem" }, { 6, "ExpandCollapse" }, { 7, "Grid" }, { 8, "GridItem" }, { 9, "MultipleView" }, { 10, "Window" }, { 11, "SelectionItem" }, { 12, "Dock" }, { 13, "Table" }, { 14, "TableItem" }, { 15, "Toggle" }, { 16, "Transform" }, { 17, "Text" }, { 18, "ItemContainer" }, { 19, "VirtualizedItem" }, { 20, "Text2" }, { 21, "TextChild" }, { 22, "TextRange" }, { 23, "Annotation" }, { 24, "Drag" }, { 25, "DropTarget" }, { 26, "ObjectModel" }, { 27, "Spreadsheet" }, { 28, "SpreadsheetItem" }, { 29, "Styles" }, { 30, "Transform2" }, { 31, "SynchronizedInput" }, { 32, "TextEdit" }, { 33, "CustomNavigation" }, { 34, "SeeitSayit" } }, // Windows.UI.Xaml.Automation.Peers.PatternInterface
-        /* 0x0284 */ new Dictionary<int, string> { { 0, "Flat" }, { 1, "Square" }, { 2, "Round" }, { 3, "Triangle" } }, // Windows.UI.Xaml.Media.PenLineCap
-        /* 0x0285 */ new Dictionary<int, string> { { 0, "Miter" }, { 1, "Bevel" }, { 2, "Round" } }, // Windows.UI.Xaml.Media.PenLineJoin
-        /* 0x0286 */ new Dictionary<int, string> { { 2, "Bottom" }, { 4, "Right" }, { 7, "Mouse" }, { 9, "Left" }, { 10, "Top" } }, // Windows.UI.Xaml.Controls.Primitives.PlacementMode
-        /* 0x0287 */ new Dictionary<int, string> { { 0, "Touch" }, { 1, "Pen" }, { 2, "Mouse" } }, // Windows.Devices.Input.PointerDeviceType
-        /* 0x0288 */ new Dictionary<int, string> { { 0, "PointerDirection_XAxis" }, { 1, "PointerDirection_YAxis" }, { 2, "PointerDirection_BothAxes" } }, // Windows.UI.Xaml.Internal.PointerDirection
-        /* 0x0289 */ new Dictionary<int, string> { { 0, "Final" }, { 1, "Intermediate" } }, // Windows.UI.Xaml.Printing.PreviewPageCountType
-        /* 0x028A */ new Dictionary<int, string> { { 0, "Bitmap" }, { 1, "Vector" } }, // Windows.UI.Xaml.Printing.PrintDocumentFormat
-        /* 0x028B */ new Dictionary<int, string> { { 0, "None" }, { 1, "TemplatedParent" }, { 2, "Self" } }, // Windows.UI.Xaml.Data.RelativeSourceMode
-        /* 0x028C */ new Dictionary<int, string> { { 0, "RowMajor" }, { 1, "ColumnMajor" }, { 2, "Indeterminate" } }, // Windows.UI.Xaml.Automation.RowOrColumnMajor
-        /* 0x028D */ new Dictionary<int, string> { { 0, "LargeDecrement" }, { 1, "SmallDecrement" }, { 2, "NoAmount" }, { 3, "LargeIncrement" }, { 4, "SmallIncrement" } }, // Windows.UI.Xaml.Automation.ScrollAmount
-        /* 0x028E */ new Dictionary<int, string> { { 0, "Disabled" }, { 1, "Auto" }, { 2, "Hidden" }, { 3, "Visible" } }, // Windows.UI.Xaml.Controls.ScrollBarVisibility
-        /* 0x028F */ new Dictionary<int, string> { { 0, "SmallDecrement" }, { 1, "SmallIncrement" }, { 2, "LargeDecrement" }, { 3, "LargeIncrement" }, { 4, "ThumbPosition" }, { 5, "ThumbTrack" }, { 6, "First" }, { 7, "Last" }, { 8, "EndScroll" } }, // Windows.UI.Xaml.Controls.Primitives.ScrollEventType
-        /* 0x0290 */ new Dictionary<int, string> { { 0, "None" }, { 1, "TouchIndicator" }, { 2, "MouseIndicator" } }, // Windows.UI.Xaml.Controls.Primitives.ScrollingIndicatorMode
-        /* 0x0291 */ new Dictionary<int, string> { { 0, "Default" }, { 1, "Leading" } }, // Windows.UI.Xaml.Controls.ScrollIntoViewAlignment
-        /* 0x0292 */ new Dictionary<int, string> { { 0, "Disabled" }, { 1, "Enabled" }, { 2, "Auto" } }, // Windows.UI.Xaml.Controls.ScrollMode
-        /* 0x0293 */ new Dictionary<int, string> { { 0, "Single" }, { 1, "Multiple" }, { 2, "Extended" } }, // Windows.UI.Xaml.Controls.SelectionMode
-        /* 0x0294 */ new Dictionary<int, string> { { 0, "StepValues" }, { 1, "Ticks" } }, // Windows.UI.Xaml.Controls.Primitives.SliderSnapsTo
-        /* 0x0295 */ new Dictionary<int, string> { { 0, "Near" }, { 1, "Center" }, { 2, "Far" } }, // Windows.UI.Xaml.Controls.Primitives.SnapPointsAlignment
-        /* 0x0296 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Optional" }, { 2, "Mandatory" }, { 3, "OptionalSingle" }, { 4, "MandatorySingle" } }, // Windows.UI.Xaml.Controls.SnapPointsType
-        /* 0x0297 */ new Dictionary<int, string> { { 0, "None" }, { 1, "SideBySide" }, { 2, "TopBottom" } }, // Windows.UI.Xaml.Media.Stereo3DVideoPackingMode
-        /* 0x0298 */ new Dictionary<int, string> { { 0, "Mono" }, { 1, "Stereo" } }, // Windows.UI.Xaml.Media.Stereo3DVideoRenderMode
-        /* 0x0299 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Fill" }, { 2, "Uniform" }, { 3, "UniformToFill" } }, // Windows.UI.Xaml.Media.Stretch
-        /* 0x029A */ new Dictionary<int, string> { { 0, "UpOnly" }, { 1, "DownOnly" }, { 2, "Both" } }, // Windows.UI.Xaml.Controls.StretchDirection
-        /* 0x029B */ new Dictionary<int, string> { { 0, "None" }, { 1, "BoldSimulation" }, { 2, "ItalicSimulation" }, { 3, "BoldItalicSimulation" } }, // Windows.UI.Xaml.Media.StyleSimulations
-        /* 0x029C */ new Dictionary<int, string> { { 0, "None" }, { 1, "Single" }, { 2, "Multiple" } }, // Windows.UI.Xaml.Automation.SupportedTextSelection
-        /* 0x029D */ new Dictionary<int, string> { { 0, "Counterclockwise" }, { 1, "Clockwise" } }, // Windows.UI.Xaml.Media.SweepDirection
-        /* 0x029E */ new Dictionary<int, string> { { 57600, "Previous" }, { 57601, "Next" }, { 57602, "Play" }, { 57603, "Pause" }, { 57604, "Edit" }, { 57605, "Save" }, { 57606, "Clear" }, { 57607, "Delete" }, { 57608, "Remove" }, { 57609, "Add" }, { 57610, "Cancel" }, { 57611, "Accept" }, { 57612, "More" }, { 57613, "Redo" }, { 57614, "Undo" }, { 57615, "Home" }, { 57616, "Up" }, { 57617, "Forward" }, { 57618, "Back" }, { 57619, "Favorite" }, { 57620, "Camera" }, { 57621, "Setting" }, { 57622, "Video" }, { 57623, "Sync" }, { 57624, "Download" }, { 57625, "Mail" }, { 57626, "Find" }, { 57627, "Help" }, { 57628, "Upload" }, { 57629, "Emoji" }, { 57630, "TwoPage" }, { 57631, "LeaveChat" }, { 57632, "MailForward" }, { 57633, "Clock" }, { 57634, "Send" }, { 57635, "Crop" }, { 57636, "RotateCamera" }, { 57637, "People" }, { 57638, "OpenPane" }, { 57639, "ClosePane" }, { 57640, "World" }, { 57641, "Flag" }, { 57642, "PreviewLink" }, { 57643, "Globe" }, { 57644, "Trim" }, { 57645, "AttachCamera" }, { 57646, "ZoomIn" }, { 57647, "Bookmarks" }, { 57648, "Document" }, { 57649, "ProtectedDocument" }, { 57650, "Page" }, { 57651, "Bullets" }, { 57652, "Comment" }, { 57653, "MailFilled" }, { 57654, "ContactInfo" }, { 57655, "HangUp" }, { 57656, "ViewAll" }, { 57657, "MapPin" }, { 57658, "Phone" }, { 57659, "VideoChat" }, { 57660, "Switch" }, { 57661, "Contact" }, { 57662, "Rename" }, { 57665, "Pin" }, { 57666, "MusicInfo" }, { 57667, "Go" }, { 57668, "Keyboard" }, { 57669, "DockLeft" }, { 57670, "DockRight" }, { 57671, "DockBottom" }, { 57672, "Remote" }, { 57673, "Refresh" }, { 57674, "Rotate" }, { 57675, "Shuffle" }, { 57676, "List" }, { 57677, "Shop" }, { 57678, "SelectAll" }, { 57679, "Orientation" }, { 57680, "Import" }, { 57681, "ImportAll" }, { 57685, "BrowsePhotos" }, { 57686, "WebCam" }, { 57688, "Pictures" }, { 57689, "SaveLocal" }, { 57690, "Caption" }, { 57691, "Stop" }, { 57692, "ShowResults" }, { 57693, "Volume" }, { 57694, "Repair" }, { 57695, "Message" }, { 57696, "Page2" }, { 57697, "CalendarDay" }, { 57698, "CalendarWeek" }, { 57699, "Calendar" }, { 57700, "Character" }, { 57701, "MailReplyAll" }, { 57702, "Read" }, { 57703, "Link" }, { 57704, "Account" }, { 57705, "ShowBcc" }, { 57706, "HideBcc" }, { 57707, "Cut" }, { 57708, "Attach" }, { 57709, "Paste" }, { 57710, "Filter" }, { 57711, "Copy" }, { 57712, "Emoji2" }, { 57713, "Important" }, { 57714, "MailReply" }, { 57715, "SlideShow" }, { 57716, "Sort" }, { 57720, "Manage" }, { 57721, "AllApps" }, { 57722, "DisconnectDrive" }, { 57723, "MapDrive" }, { 57724, "NewWindow" }, { 57725, "OpenWith" }, { 57729, "ContactPresence" }, { 57730, "Priority" }, { 57732, "GoToToday" }, { 57733, "Font" }, { 57734, "FontColor" }, { 57735, "Contact2" }, { 57736, "Folder" }, { 57737, "Audio" }, { 57738, "Placeholder" }, { 57739, "View" }, { 57740, "SetLockScreen" }, { 57741, "SetTile" }, { 57744, "ClosedCaption" }, { 57745, "StopSlideShow" }, { 57746, "Permissions" }, { 57747, "Highlight" }, { 57748, "DisableUpdates" }, { 57749, "UnFavorite" }, { 57750, "UnPin" }, { 57751, "OpenLocal" }, { 57752, "Mute" }, { 57753, "Italic" }, { 57754, "Underline" }, { 57755, "Bold" }, { 57756, "MoveToFolder" }, { 57757, "LikeDislike" }, { 57758, "Dislike" }, { 57759, "Like" }, { 57760, "AlignRight" }, { 57761, "AlignCenter" }, { 57762, "AlignLeft" }, { 57763, "Zoom" }, { 57764, "ZoomOut" }, { 57765, "OpenFile" }, { 57766, "OtherUser" }, { 57767, "Admin" }, { 57795, "Street" }, { 57796, "Map" }, { 57797, "ClearSelection" }, { 57798, "FontDecrease" }, { 57799, "FontIncrease" }, { 57800, "FontSize" }, { 57801, "CellPhone" }, { 57802, "ReShare" }, { 57803, "Tag" }, { 57804, "RepeatOne" }, { 57805, "RepeatAll" }, { 57806, "OutlineStar" }, { 57807, "SolidStar" }, { 57808, "Calculator" }, { 57809, "Directions" }, { 57810, "Target" }, { 57811, "Library" }, { 57812, "PhoneBook" }, { 57813, "Memo" }, { 57814, "Microphone" }, { 57815, "PostUpdate" }, { 57816, "BackToWindow" }, { 57817, "FullScreen" }, { 57818, "NewFolder" }, { 57819, "CalendarReply" }, { 57821, "UnSyncFolder" }, { 57822, "ReportHacked" }, { 57823, "SyncFolder" }, { 57824, "BlockContact" }, { 57825, "SwitchApps" }, { 57826, "AddFriend" }, { 57827, "TouchPointer" }, { 57828, "GoToStart" }, { 57829, "ZeroBars" }, { 57830, "OneBar" }, { 57831, "TwoBars" }, { 57832, "ThreeBars" }, { 57833, "FourBars" }, { 58004, "Scan" }, { 58005, "Preview" }, { 59136, "GlobalNavigationButton" }, { 59181, "Share" }, { 59209, "Print" }, { 59792, "XboxOneConsole" } }, // Windows.UI.Xaml.Controls.Symbol
-        /* 0x029F */ new Dictionary<int, string> { { 1, "KeyUp" }, { 2, "KeyDown" }, { 4, "LeftMouseUp" }, { 8, "LeftMouseDown" }, { 16, "RightMouseUp" }, { 32, "RightMouseDown" } }, // Windows.UI.Xaml.Automation.SynchronizedInputType
-        /* 0x02A0 */ new Dictionary<int, string> { { 0, "Center" }, { 1, "Left" }, { 2, "Right" }, { 3, "Justify" }, { 4, "DetectFromContent" } }, // Windows.UI.Xaml.TextAlignment
-        /* 0x02A1 */ new Dictionary<int, string> { { 0, "Ideal" }, { 1, "Display" } }, // Windows.UI.Xaml.Media.TextFormattingMode
-        /* 0x02A2 */ new Dictionary<int, string> { { 0, "Fixed" }, { 1, "Animated" } }, // Windows.UI.Xaml.Media.TextHintingMode
-        /* 0x02A3 */ new Dictionary<int, string> { { 0, "Full" }, { 1, "TrimToCapHeight" }, { 2, "TrimToBaseline" }, { 3, "Tight" } }, // Windows.UI.Xaml.TextLineBounds
-        /* 0x02A4 */ new Dictionary<int, string> { { 0, "Default" }, { 1, "DetectFromContent" } }, // Windows.UI.Xaml.TextReadingOrder
-        /* 0x02A5 */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "Aliased" }, { 2, "Grayscale" }, { 3, "ClearType" } }, // Windows.UI.Xaml.Media.TextRenderingMode
-        /* 0x02A6 */ new Dictionary<int, string> { { 0, "None" }, { 1, "CharacterEllipsis" }, { 2, "WordEllipsis" }, { 3, "Clip" } }, // Windows.UI.Xaml.TextTrimming
-        /* 0x02A7 */ new Dictionary<int, string> { { 1, "NoWrap" }, { 2, "Wrap" }, { 3, "WrapWholeWords" } }, // Windows.UI.Xaml.TextWrapping
-        /* 0x02A8 */ new Dictionary<int, string> { { 0, "None" }, { 1, "TopLeft" }, { 2, "BottomRight" }, { 3, "Outside" }, { 4, "Inline" } }, // Windows.UI.Xaml.Controls.Primitives.TickPlacement
-        /* 0x02A9 */ new Dictionary<int, string> { { 0, "Off" }, { 1, "On" }, { 2, "Indeterminate" } }, // Windows.UI.Xaml.Automation.ToggleState
-        /* 0x02AA */ new Dictionary<int, string> { { 0, "Primitive" }, { 1, "Metadata" }, { 2, "Custom" } }, // Windows.UI.Xaml.Interop.TypeKind
-        /* 0x02AB */ new Dictionary<int, string> { { 0, "Default" }, { 1, "PropertyChanged" }, { 2, "Explicit" }, { 3, "LostFocus" } }, // Windows.UI.Xaml.Data.UpdateSourceTrigger
-        /* 0x02AC */ new Dictionary<int, string> { { 0, "Top" }, { 1, "Center" }, { 2, "Bottom" }, { 3, "Stretch" } }, // Windows.UI.Xaml.VerticalAlignment
-        /* 0x02AD */ new Dictionary<int, string> { { 0, "Standard" }, { 1, "Recycling" } }, // Windows.UI.Xaml.Controls.VirtualizationMode
-        /* 0x02AE */ new Dictionary<int, string> { { 0, "None" }, { 1, "LeftButton" }, { 2, "RightButton" }, { 3, "Cancel" }, { 4, "MiddleButton" }, { 5, "XButton1" }, { 6, "XButton2" }, { 8, "Back" }, { 9, "Tab" }, { 12, "Clear" }, { 13, "Enter" }, { 16, "Shift" }, { 17, "Control" }, { 18, "Menu" }, { 19, "Pause" }, { 20, "CapitalLock" }, { 21, "Kana" }, { 23, "Junja" }, { 24, "Final" }, { 25, "Kanji" }, { 27, "Escape" }, { 28, "Convert" }, { 29, "NonConvert" }, { 30, "Accept" }, { 31, "ModeChange" }, { 32, "Space" }, { 33, "PageUp" }, { 34, "PageDown" }, { 35, "End" }, { 36, "Home" }, { 37, "Left" }, { 38, "Up" }, { 39, "Right" }, { 40, "Down" }, { 41, "Select" }, { 42, "Print" }, { 43, "Execute" }, { 44, "Snapshot" }, { 45, "Insert" }, { 46, "Delete" }, { 47, "Help" }, { 48, "Number0" }, { 49, "Number1" }, { 50, "Number2" }, { 51, "Number3" }, { 52, "Number4" }, { 53, "Number5" }, { 54, "Number6" }, { 55, "Number7" }, { 56, "Number8" }, { 57, "Number9" }, { 65, "A" }, { 66, "B" }, { 67, "C" }, { 68, "D" }, { 69, "E" }, { 70, "F" }, { 71, "G" }, { 72, "H" }, { 73, "I" }, { 74, "J" }, { 75, "K" }, { 76, "L" }, { 77, "M" }, { 78, "N" }, { 79, "O" }, { 80, "P" }, { 81, "Q" }, { 82, "R" }, { 83, "S" }, { 84, "T" }, { 85, "U" }, { 86, "V" }, { 87, "W" }, { 88, "X" }, { 89, "Y" }, { 90, "Z" }, { 91, "LeftWindows" }, { 92, "RightWindows" }, { 93, "Application" }, { 95, "Sleep" }, { 96, "NumberPad0" }, { 97, "NumberPad1" }, { 98, "NumberPad2" }, { 99, "NumberPad3" }, { 100, "NumberPad4" }, { 101, "NumberPad5" }, { 102, "NumberPad6" }, { 103, "NumberPad7" }, { 104, "NumberPad8" }, { 105, "NumberPad9" }, { 106, "Multiply" }, { 107, "Add" }, { 108, "Separator" }, { 109, "Subtract" }, { 110, "Decimal" }, { 111, "Divide" }, { 112, "F1" }, { 113, "F2" }, { 114, "F3" }, { 115, "F4" }, { 116, "F5" }, { 117, "F6" }, { 118, "F7" }, { 119, "F8" }, { 120, "F9" }, { 121, "F10" }, { 122, "F11" }, { 123, "F12" }, { 124, "F13" }, { 125, "F14" }, { 126, "F15" }, { 127, "F16" }, { 128, "F17" }, { 129, "F18" }, { 130, "F19" }, { 131, "F20" }, { 132, "F21" }, { 133, "F22" }, { 134, "F23" }, { 135, "F24" }, { 144, "NumberKeyLock" }, { 145, "Scroll" }, { 160, "LeftShift" }, { 161, "RightShift" }, { 162, "LeftControl" }, { 163, "RightControl" }, { 164, "LeftMenu" }, { 165, "RightMenu" } }, // Windows.System.VirtualKey
-        /* 0x02AF */ new Dictionary<int, string> { { 0, "None" }, { 1, "Control" }, { 2, "Menu" }, { 4, "Shift" }, { 8, "Windows" } }, // Windows.System.VirtualKeyModifiers
-        /* 0x02B0 */ new Dictionary<int, string> { { 0, "Visible" }, { 1, "Collapsed" } }, // Windows.UI.Xaml.Visibility
-        /* 0x02B1 */ new Dictionary<int, string> { { 0, "Running" }, { 1, "Closing" }, { 2, "ReadyForUserInteraction" }, { 3, "BlockedByModalWindow" }, { 4, "NotResponding" } }, // Windows.UI.Xaml.Automation.WindowInteractionState
-        /* 0x02B2 */ new Dictionary<int, string> { { 0, "Normal" }, { 1, "Maximized" }, { 2, "Minimized" } }, // Windows.UI.Xaml.Automation.WindowVisualState
-        /* 0x02B3 */ new Dictionary<int, string> { { 0, "Disabled" }, { 1, "Enabled" } }, // Windows.UI.Xaml.Controls.ZoomMode
-        /* 0x02B4 */ new Dictionary<int, string> { { 0, "NoAmount" }, { 1, "LargeDecrement" }, { 2, "SmallDecrement" }, { 3, "LargeIncrement" }, { 4, "SmallIncrement" } }, // Windows.UI.Xaml.Automation.ZoomUnit
+        /* 0x0250 */ new() { { 0, "Reset" }, { 1, "ItemInserted" }, { 2, "ItemRemoved" }, { 3, "ItemChanged" } }, // Windows.Foundation.Collections.CollectionChange
+        /* 0x0251 */ new() { { 0, "ScRgbLinearInterpolation" }, { 1, "SRgbLinearInterpolation" } }, // Windows.UI.Xaml.Media.ColorInterpolationMode
+        /* 0x0252 */ new() { { 0, "Application" }, { 1, "Nested" } }, // Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation
+        /* 0x0253 */ new() { { 0, "None" }, { 1, "Primary" }, { 2, "Secondary" } }, // Windows.UI.Xaml.Controls.ContentDialogResult
+        /* 0x0254 */ new() { { 0, "Physical" }, { 1, "Logical" } }, // Windows.UI.Xaml.Media.Imaging.DecodePixelType
+        /* 0x0255 */ new() { { 0, "Top" }, { 1, "Left" }, { 2, "Bottom" }, { 3, "Right" }, { 4, "Fill" }, { 5, "None" } }, // Windows.UI.Xaml.Automation.DockPosition
+        /* 0x0256 */ new() { { 0, "EaseOut" }, { 1, "EaseIn" }, { 2, "EaseInOut" } }, // Windows.UI.Xaml.Media.Animation.EasingMode
+        /* 0x0257 */ new() { { 0, "Left" }, { 1, "Top" }, { 2, "Right" }, { 3, "Bottom" } }, // Windows.UI.Xaml.Controls.Primitives.EdgeTransitionLocation
+        /* 0x0258 */ new() { { 0, "Inherit" }, { 1, "SourceOver" }, { 2, "MinBlend" }, { 3, "DestInvert" } }, // Windows.UI.Xaml.Media.ElementCompositeMode
+        /* 0x0259 */ new() { { 0, "Default" }, { 1, "Light" }, { 2, "Dark" } }, // Windows.UI.Xaml.ElementTheme
+        /* 0x025A */ new() { { 0, "Collapsed" }, { 1, "Expanded" }, { 2, "PartiallyExpanded" }, { 3, "LeafNode" } }, // Windows.UI.Xaml.Automation.ExpandCollapseState
+        /* 0x025B */ new() { { 0, "HoldEnd" }, { 1, "Stop" } }, // Windows.UI.Xaml.Media.Animation.FillBehavior
+        /* 0x025C */ new() { { 0, "EvenOdd" }, { 1, "Nonzero" } }, // Windows.UI.Xaml.Media.FillRule
+        /* 0x025D */ new() { { 0, "LeftToRight" }, { 1, "RightToLeft" } }, // Windows.UI.Xaml.FlowDirection
+        /* 0x025E */ new() { { 0, "Top" }, { 1, "Bottom" }, { 2, "Left" }, { 3, "Right" }, { 4, "Full" }, { 5, "TopEdgeAlignedLeft" }, { 6, "TopEdgeAlignedRight" }, { 7, "BottomEdgeAlignedLeft" }, { 8, "BottomEdgeAlignedRight" }, { 9, "LeftEdgeAlignedTop" }, { 10, "LeftEdgeAlignedBottom" }, { 11, "RightEdgeAlignedTop" }, { 12, "RightEdgeAlignedBottom" }, { 13, "Auto" } }, // Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode
+        /* 0x025F */ new() { { 0, "Next" }, { 1, "Previous" }, { 2, "Up" }, { 3, "Down" }, { 4, "Left" }, { 5, "Right" }, { 6, "None" } }, // Windows.UI.Xaml.Input.FocusNavigationDirection
+        /* 0x0260 */ new() { { 0, "Unfocused" }, { 1, "Pointer" }, { 2, "Keyboard" }, { 3, "Programmatic" } }, // Windows.UI.Xaml.FocusState
+        /* 0x0261 */ new() { { 0, "Normal" }, { 1, "AllSmallCaps" }, { 2, "SmallCaps" }, { 3, "AllPetiteCaps" }, { 4, "PetiteCaps" }, { 5, "Unicase" }, { 6, "Titling" } }, // Windows.UI.Xaml.FontCapitals
+        /* 0x0262 */ new() { { 0, "Normal" }, { 1, "HojoKanji" }, { 2, "Jis04" }, { 3, "Jis78" }, { 4, "Jis83" }, { 5, "Jis90" }, { 6, "NlcKanji" }, { 7, "Simplified" }, { 8, "Traditional" }, { 9, "TraditionalNames" } }, // Windows.UI.Xaml.FontEastAsianLanguage
+        /* 0x0263 */ new() { { 0, "Normal" }, { 1, "Full" }, { 2, "Half" }, { 3, "Proportional" }, { 4, "Quarter" }, { 5, "Third" } }, // Windows.UI.Xaml.FontEastAsianWidths
+        /* 0x0264 */ new() { { 0, "Normal" }, { 1, "Stacked" }, { 2, "Slashed" } }, // Windows.UI.Xaml.FontFraction
+        /* 0x0265 */ new() { { 0, "Normal" }, { 1, "Proportional" }, { 2, "Tabular" } }, // Windows.UI.Xaml.FontNumeralAlignment
+        /* 0x0266 */ new() { { 0, "Normal" }, { 1, "Lining" }, { 2, "OldStyle" } }, // Windows.UI.Xaml.FontNumeralStyle
+        /* 0x0267 */ new() { { 0, "Undefined" }, { 1, "UltraCondensed" }, { 2, "ExtraCondensed" }, { 3, "Condensed" }, { 4, "SemiCondensed" }, { 5, "Normal" }, { 6, "SemiExpanded" }, { 7, "Expanded" }, { 8, "ExtraExpanded" }, { 9, "UltraExpanded" } }, // Windows.UI.Text.FontStretch
+        /* 0x0268 */ new() { { 0, "Normal" }, { 1, "Oblique" }, { 2, "Italic" } }, // Windows.UI.Text.FontStyle
+        /* 0x0269 */ new() { { 0, "Normal" }, { 1, "Superscript" }, { 2, "Subscript" }, { 3, "Ordinal" }, { 4, "Inferior" }, { 5, "Ruby" } }, // Windows.UI.Xaml.FontVariants
+        /* 0x026A */ new() { { 0, "Forward" }, { 1, "Backward" } }, // Windows.UI.Xaml.Controls.Primitives.GeneratorDirection
+        /* 0x026B */ new() { { 0, "None" }, { 1, "Tapped" }, { 2, "DoubleTapped" }, { 3, "RightTapped" }, { 4, "Holding" } }, // Windows.UI.Xaml.Input.GestureModes
+        /* 0x026C */ new() { { 0, "Pad" }, { 1, "Reflect" }, { 2, "Repeat" } }, // Windows.UI.Xaml.Media.GradientSpreadMethod
+        /* 0x026D */ new() { { 0, "Auto" }, { 1, "Pixel" }, { 2, "Star" } }, // Windows.UI.Xaml.GridUnitType
+        /* 0x026E */ new() { { 0, "Top" }, { 1, "Left" } }, // Windows.UI.Xaml.Controls.Primitives.GroupHeaderPlacement
+        /* 0x026F */ new() { { 0, "Started" }, { 1, "Completed" }, { 2, "Canceled" } }, // Windows.UI.Input.HoldingState
+        /* 0x0270 */ new() { { 0, "Left" }, { 1, "Center" }, { 2, "Right" }, { 3, "Stretch" } }, // Windows.UI.Xaml.HorizontalAlignment
+        /* 0x0271 */ new() { { 0, "None" }, { 1, "Edge" } }, // Windows.UI.Xaml.Controls.IncrementalLoadingTrigger
+        /* 0x0272 */ new() { { 0, "Default" }, { 1, "Url" }, { 5, "EmailSmtpAddress" }, { 7, "PersonalFullName" }, { 20, "CurrencyAmountAndSymbol" }, { 21, "CurrencyAmount" }, { 23, "DateMonthNumber" }, { 24, "DateDayNumber" }, { 25, "DateYear" }, { 28, "Digits" }, { 29, "Number" }, { 31, "Password" }, { 32, "TelephoneNumber" }, { 33, "TelephoneCountryCode" }, { 34, "TelephoneAreaCode" }, { 35, "TelephoneLocalNumber" }, { 37, "TimeHour" }, { 38, "TimeMinutesOrSeconds" }, { 39, "NumberFullWidth" }, { 40, "AlphanumericHalfWidth" }, { 41, "AlphanumericFullWidth" }, { 44, "Hiragana" }, { 45, "KatakanaHalfWidth" }, { 46, "KatakanaFullWidth" }, { 47, "Hanja" }, { 48, "HangulHalfWidth" }, { 49, "HangulFullWidth" }, { 50, "Search" }, { 51, "Formula" }, { 52, "SearchIncremental" }, { 53, "ChineseHalfWidth" }, { 54, "ChineseFullWidth" }, { 55, "NativeScript" }, { 57, "Text" }, { 58, "Chat" }, { 59, "NameOrPhoneNumber" }, { 60, "EmailNameOrAddress" }, { 61, "Private" }, { 62, "Maps" }, { 63, "NumericPassword" }, { 64, "NumericPin" }, { 65, "AlphanumericPin" }, { 67, "FormulaNumber" }, { 68, "ChatWithoutEmoji" } }, // Windows.UI.Xaml.Input.InputScopeNameValue
+        /* 0x0273 */ new() { { 0, "KeepItemsInView" }, { 1, "KeepScrollOffset" }, { 2, "KeepLastItemInView" } }, // Windows.UI.Xaml.Controls.ItemsUpdatingScrollMode
+        /* 0x0274 */ new() { { 0, "Local" }, { 1, "Cycle" }, { 2, "Once" } }, // Windows.UI.Xaml.Input.KeyboardNavigationMode
+        /* 0x0275 */ new() { { 0, "MaxHeight" }, { 1, "BlockLineHeight" }, { 2, "BaselineToBaseline" } }, // Windows.UI.Xaml.LineStackingStrategy
+        /* 0x0276 */ new() { { 0, "Disabled" }, { 1, "Enabled" } }, // Windows.UI.Xaml.Controls.ListViewReorderMode
+        /* 0x0277 */ new() { { 0, "None" }, { 1, "Single" }, { 2, "Multiple" }, { 3, "Extended" } }, // Windows.UI.Xaml.Controls.ListViewSelectionMode
+        /* 0x0278 */ new() { { 0, "Backward" }, { 1, "Forward" } }, // Windows.UI.Xaml.Documents.LogicalDirection
+        /* 0x0279 */ new() { { 0, "None" }, { 1, "TranslateX" }, { 2, "TranslateY" }, { 4, "TranslateRailsX" }, { 8, "TranslateRailsY" }, { 16, "Rotate" }, { 32, "Scale" }, { 64, "TranslateInertia" }, { 128, "RotateInertia" }, { 256, "ScaleInertia" }, { 65535, "All" }, { 65536, "System" } }, // Windows.UI.Xaml.Input.ManipulationModes
+        /* 0x027A */ new() { { 0, "None" }, { 1, "Extension" }, { 2, "Binding" } }, // Windows.UI.Xaml.MarkupExtensionType
+        /* 0x027B */ new() { { 0, "NotSupported" }, { 1, "Maybe" }, { 2, "Probably" } }, // Windows.UI.Xaml.Media.MediaCanPlayResponse
+        /* 0x027C */ new() { { 0, "Closed" }, { 1, "Opening" }, { 2, "Buffering" }, { 3, "Playing" }, { 4, "Paused" }, { 5, "Stopped" } }, // Windows.UI.Xaml.Media.MediaElementState
+        /* 0x027D */ new() { { 0, "Disabled" }, { 1, "Required" }, { 2, "Enabled" } }, // Windows.UI.Xaml.Navigation.NavigationCacheMode
+        /* 0x027E */ new() { { 0, "New" }, { 1, "Back" }, { 2, "Forward" }, { 3, "Refresh" } }, // Windows.UI.Xaml.Navigation.NavigationMode
+        /* 0x027F */ new() { { 0, "Add" }, { 1, "Remove" }, { 2, "Replace" }, { 3, "Move" }, { 4, "Reset" } }, // Windows.UI.Xaml.Interop.NotifyCollectionChangedAction
+        /* 0x0280 */ new() { { 0, "None" }, { 1, "TrimSideBearings" } }, // Windows.UI.Xaml.OpticalMarginAlignment
+        /* 0x0281 */ new() { { 0, "Vertical" }, { 1, "Horizontal" } }, // Windows.UI.Xaml.Controls.Orientation
+        /* 0x0282 */ new() { { 0, "None" }, { 1, "Forward" }, { 2, "Backward" } }, // Windows.UI.Xaml.Controls.PanelScrollingDirection
+        /* 0x0283 */ new() { { 0, "Invoke" }, { 1, "Selection" }, { 2, "Value" }, { 3, "RangeValue" }, { 4, "Scroll" }, { 5, "ScrollItem" }, { 6, "ExpandCollapse" }, { 7, "Grid" }, { 8, "GridItem" }, { 9, "MultipleView" }, { 10, "Window" }, { 11, "SelectionItem" }, { 12, "Dock" }, { 13, "Table" }, { 14, "TableItem" }, { 15, "Toggle" }, { 16, "Transform" }, { 17, "Text" }, { 18, "ItemContainer" }, { 19, "VirtualizedItem" }, { 20, "Text2" }, { 21, "TextChild" }, { 22, "TextRange" }, { 23, "Annotation" }, { 24, "Drag" }, { 25, "DropTarget" }, { 26, "ObjectModel" }, { 27, "Spreadsheet" }, { 28, "SpreadsheetItem" }, { 29, "Styles" }, { 30, "Transform2" }, { 31, "SynchronizedInput" }, { 32, "TextEdit" }, { 33, "CustomNavigation" }, { 34, "SeeitSayit" } }, // Windows.UI.Xaml.Automation.Peers.PatternInterface
+        /* 0x0284 */ new() { { 0, "Flat" }, { 1, "Square" }, { 2, "Round" }, { 3, "Triangle" } }, // Windows.UI.Xaml.Media.PenLineCap
+        /* 0x0285 */ new() { { 0, "Miter" }, { 1, "Bevel" }, { 2, "Round" } }, // Windows.UI.Xaml.Media.PenLineJoin
+        /* 0x0286 */ new() { { 2, "Bottom" }, { 4, "Right" }, { 7, "Mouse" }, { 9, "Left" }, { 10, "Top" } }, // Windows.UI.Xaml.Controls.Primitives.PlacementMode
+        /* 0x0287 */ new() { { 0, "Touch" }, { 1, "Pen" }, { 2, "Mouse" } }, // Windows.Devices.Input.PointerDeviceType
+        /* 0x0288 */ new() { { 0, "PointerDirection_XAxis" }, { 1, "PointerDirection_YAxis" }, { 2, "PointerDirection_BothAxes" } }, // Windows.UI.Xaml.Internal.PointerDirection
+        /* 0x0289 */ new() { { 0, "Final" }, { 1, "Intermediate" } }, // Windows.UI.Xaml.Printing.PreviewPageCountType
+        /* 0x028A */ new() { { 0, "Bitmap" }, { 1, "Vector" } }, // Windows.UI.Xaml.Printing.PrintDocumentFormat
+        /* 0x028B */ new() { { 0, "None" }, { 1, "TemplatedParent" }, { 2, "Self" } }, // Windows.UI.Xaml.Data.RelativeSourceMode
+        /* 0x028C */ new() { { 0, "RowMajor" }, { 1, "ColumnMajor" }, { 2, "Indeterminate" } }, // Windows.UI.Xaml.Automation.RowOrColumnMajor
+        /* 0x028D */ new() { { 0, "LargeDecrement" }, { 1, "SmallDecrement" }, { 2, "NoAmount" }, { 3, "LargeIncrement" }, { 4, "SmallIncrement" } }, // Windows.UI.Xaml.Automation.ScrollAmount
+        /* 0x028E */ new() { { 0, "Disabled" }, { 1, "Auto" }, { 2, "Hidden" }, { 3, "Visible" } }, // Windows.UI.Xaml.Controls.ScrollBarVisibility
+        /* 0x028F */ new() { { 0, "SmallDecrement" }, { 1, "SmallIncrement" }, { 2, "LargeDecrement" }, { 3, "LargeIncrement" }, { 4, "ThumbPosition" }, { 5, "ThumbTrack" }, { 6, "First" }, { 7, "Last" }, { 8, "EndScroll" } }, // Windows.UI.Xaml.Controls.Primitives.ScrollEventType
+        /* 0x0290 */ new() { { 0, "None" }, { 1, "TouchIndicator" }, { 2, "MouseIndicator" } }, // Windows.UI.Xaml.Controls.Primitives.ScrollingIndicatorMode
+        /* 0x0291 */ new() { { 0, "Default" }, { 1, "Leading" } }, // Windows.UI.Xaml.Controls.ScrollIntoViewAlignment
+        /* 0x0292 */ new() { { 0, "Disabled" }, { 1, "Enabled" }, { 2, "Auto" } }, // Windows.UI.Xaml.Controls.ScrollMode
+        /* 0x0293 */ new() { { 0, "Single" }, { 1, "Multiple" }, { 2, "Extended" } }, // Windows.UI.Xaml.Controls.SelectionMode
+        /* 0x0294 */ new() { { 0, "StepValues" }, { 1, "Ticks" } }, // Windows.UI.Xaml.Controls.Primitives.SliderSnapsTo
+        /* 0x0295 */ new() { { 0, "Near" }, { 1, "Center" }, { 2, "Far" } }, // Windows.UI.Xaml.Controls.Primitives.SnapPointsAlignment
+        /* 0x0296 */ new() { { 0, "None" }, { 1, "Optional" }, { 2, "Mandatory" }, { 3, "OptionalSingle" }, { 4, "MandatorySingle" } }, // Windows.UI.Xaml.Controls.SnapPointsType
+        /* 0x0297 */ new() { { 0, "None" }, { 1, "SideBySide" }, { 2, "TopBottom" } }, // Windows.UI.Xaml.Media.Stereo3DVideoPackingMode
+        /* 0x0298 */ new() { { 0, "Mono" }, { 1, "Stereo" } }, // Windows.UI.Xaml.Media.Stereo3DVideoRenderMode
+        /* 0x0299 */ new() { { 0, "None" }, { 1, "Fill" }, { 2, "Uniform" }, { 3, "UniformToFill" } }, // Windows.UI.Xaml.Media.Stretch
+        /* 0x029A */ new() { { 0, "UpOnly" }, { 1, "DownOnly" }, { 2, "Both" } }, // Windows.UI.Xaml.Controls.StretchDirection
+        /* 0x029B */ new() { { 0, "None" }, { 1, "BoldSimulation" }, { 2, "ItalicSimulation" }, { 3, "BoldItalicSimulation" } }, // Windows.UI.Xaml.Media.StyleSimulations
+        /* 0x029C */ new() { { 0, "None" }, { 1, "Single" }, { 2, "Multiple" } }, // Windows.UI.Xaml.Automation.SupportedTextSelection
+        /* 0x029D */ new() { { 0, "Counterclockwise" }, { 1, "Clockwise" } }, // Windows.UI.Xaml.Media.SweepDirection
+        /* 0x029E */ new() { { 57600, "Previous" }, { 57601, "Next" }, { 57602, "Play" }, { 57603, "Pause" }, { 57604, "Edit" }, { 57605, "Save" }, { 57606, "Clear" }, { 57607, "Delete" }, { 57608, "Remove" }, { 57609, "Add" }, { 57610, "Cancel" }, { 57611, "Accept" }, { 57612, "More" }, { 57613, "Redo" }, { 57614, "Undo" }, { 57615, "Home" }, { 57616, "Up" }, { 57617, "Forward" }, { 57618, "Back" }, { 57619, "Favorite" }, { 57620, "Camera" }, { 57621, "Setting" }, { 57622, "Video" }, { 57623, "Sync" }, { 57624, "Download" }, { 57625, "Mail" }, { 57626, "Find" }, { 57627, "Help" }, { 57628, "Upload" }, { 57629, "Emoji" }, { 57630, "TwoPage" }, { 57631, "LeaveChat" }, { 57632, "MailForward" }, { 57633, "Clock" }, { 57634, "Send" }, { 57635, "Crop" }, { 57636, "RotateCamera" }, { 57637, "People" }, { 57638, "OpenPane" }, { 57639, "ClosePane" }, { 57640, "World" }, { 57641, "Flag" }, { 57642, "PreviewLink" }, { 57643, "Globe" }, { 57644, "Trim" }, { 57645, "AttachCamera" }, { 57646, "ZoomIn" }, { 57647, "Bookmarks" }, { 57648, "Document" }, { 57649, "ProtectedDocument" }, { 57650, "Page" }, { 57651, "Bullets" }, { 57652, "Comment" }, { 57653, "MailFilled" }, { 57654, "ContactInfo" }, { 57655, "HangUp" }, { 57656, "ViewAll" }, { 57657, "MapPin" }, { 57658, "Phone" }, { 57659, "VideoChat" }, { 57660, "Switch" }, { 57661, "Contact" }, { 57662, "Rename" }, { 57665, "Pin" }, { 57666, "MusicInfo" }, { 57667, "Go" }, { 57668, "Keyboard" }, { 57669, "DockLeft" }, { 57670, "DockRight" }, { 57671, "DockBottom" }, { 57672, "Remote" }, { 57673, "Refresh" }, { 57674, "Rotate" }, { 57675, "Shuffle" }, { 57676, "List" }, { 57677, "Shop" }, { 57678, "SelectAll" }, { 57679, "Orientation" }, { 57680, "Import" }, { 57681, "ImportAll" }, { 57685, "BrowsePhotos" }, { 57686, "WebCam" }, { 57688, "Pictures" }, { 57689, "SaveLocal" }, { 57690, "Caption" }, { 57691, "Stop" }, { 57692, "ShowResults" }, { 57693, "Volume" }, { 57694, "Repair" }, { 57695, "Message" }, { 57696, "Page2" }, { 57697, "CalendarDay" }, { 57698, "CalendarWeek" }, { 57699, "Calendar" }, { 57700, "Character" }, { 57701, "MailReplyAll" }, { 57702, "Read" }, { 57703, "Link" }, { 57704, "Account" }, { 57705, "ShowBcc" }, { 57706, "HideBcc" }, { 57707, "Cut" }, { 57708, "Attach" }, { 57709, "Paste" }, { 57710, "Filter" }, { 57711, "Copy" }, { 57712, "Emoji2" }, { 57713, "Important" }, { 57714, "MailReply" }, { 57715, "SlideShow" }, { 57716, "Sort" }, { 57720, "Manage" }, { 57721, "AllApps" }, { 57722, "DisconnectDrive" }, { 57723, "MapDrive" }, { 57724, "NewWindow" }, { 57725, "OpenWith" }, { 57729, "ContactPresence" }, { 57730, "Priority" }, { 57732, "GoToToday" }, { 57733, "Font" }, { 57734, "FontColor" }, { 57735, "Contact2" }, { 57736, "Folder" }, { 57737, "Audio" }, { 57738, "Placeholder" }, { 57739, "View" }, { 57740, "SetLockScreen" }, { 57741, "SetTile" }, { 57744, "ClosedCaption" }, { 57745, "StopSlideShow" }, { 57746, "Permissions" }, { 57747, "Highlight" }, { 57748, "DisableUpdates" }, { 57749, "UnFavorite" }, { 57750, "UnPin" }, { 57751, "OpenLocal" }, { 57752, "Mute" }, { 57753, "Italic" }, { 57754, "Underline" }, { 57755, "Bold" }, { 57756, "MoveToFolder" }, { 57757, "LikeDislike" }, { 57758, "Dislike" }, { 57759, "Like" }, { 57760, "AlignRight" }, { 57761, "AlignCenter" }, { 57762, "AlignLeft" }, { 57763, "Zoom" }, { 57764, "ZoomOut" }, { 57765, "OpenFile" }, { 57766, "OtherUser" }, { 57767, "Admin" }, { 57795, "Street" }, { 57796, "Map" }, { 57797, "ClearSelection" }, { 57798, "FontDecrease" }, { 57799, "FontIncrease" }, { 57800, "FontSize" }, { 57801, "CellPhone" }, { 57802, "ReShare" }, { 57803, "Tag" }, { 57804, "RepeatOne" }, { 57805, "RepeatAll" }, { 57806, "OutlineStar" }, { 57807, "SolidStar" }, { 57808, "Calculator" }, { 57809, "Directions" }, { 57810, "Target" }, { 57811, "Library" }, { 57812, "PhoneBook" }, { 57813, "Memo" }, { 57814, "Microphone" }, { 57815, "PostUpdate" }, { 57816, "BackToWindow" }, { 57817, "FullScreen" }, { 57818, "NewFolder" }, { 57819, "CalendarReply" }, { 57821, "UnSyncFolder" }, { 57822, "ReportHacked" }, { 57823, "SyncFolder" }, { 57824, "BlockContact" }, { 57825, "SwitchApps" }, { 57826, "AddFriend" }, { 57827, "TouchPointer" }, { 57828, "GoToStart" }, { 57829, "ZeroBars" }, { 57830, "OneBar" }, { 57831, "TwoBars" }, { 57832, "ThreeBars" }, { 57833, "FourBars" }, { 58004, "Scan" }, { 58005, "Preview" }, { 59136, "GlobalNavigationButton" }, { 59181, "Share" }, { 59209, "Print" }, { 59792, "XboxOneConsole" } }, // Windows.UI.Xaml.Controls.Symbol
+        /* 0x029F */ new() { { 1, "KeyUp" }, { 2, "KeyDown" }, { 4, "LeftMouseUp" }, { 8, "LeftMouseDown" }, { 16, "RightMouseUp" }, { 32, "RightMouseDown" } }, // Windows.UI.Xaml.Automation.SynchronizedInputType
+        /* 0x02A0 */ new() { { 0, "Center" }, { 1, "Left" }, { 2, "Right" }, { 3, "Justify" }, { 4, "DetectFromContent" } }, // Windows.UI.Xaml.TextAlignment
+        /* 0x02A1 */ new() { { 0, "Ideal" }, { 1, "Display" } }, // Windows.UI.Xaml.Media.TextFormattingMode
+        /* 0x02A2 */ new() { { 0, "Fixed" }, { 1, "Animated" } }, // Windows.UI.Xaml.Media.TextHintingMode
+        /* 0x02A3 */ new() { { 0, "Full" }, { 1, "TrimToCapHeight" }, { 2, "TrimToBaseline" }, { 3, "Tight" } }, // Windows.UI.Xaml.TextLineBounds
+        /* 0x02A4 */ new() { { 0, "Default" }, { 1, "DetectFromContent" } }, // Windows.UI.Xaml.TextReadingOrder
+        /* 0x02A5 */ new() { { 0, "Auto" }, { 1, "Aliased" }, { 2, "Grayscale" }, { 3, "ClearType" } }, // Windows.UI.Xaml.Media.TextRenderingMode
+        /* 0x02A6 */ new() { { 0, "None" }, { 1, "CharacterEllipsis" }, { 2, "WordEllipsis" }, { 3, "Clip" } }, // Windows.UI.Xaml.TextTrimming
+        /* 0x02A7 */ new() { { 1, "NoWrap" }, { 2, "Wrap" }, { 3, "WrapWholeWords" } }, // Windows.UI.Xaml.TextWrapping
+        /* 0x02A8 */ new() { { 0, "None" }, { 1, "TopLeft" }, { 2, "BottomRight" }, { 3, "Outside" }, { 4, "Inline" } }, // Windows.UI.Xaml.Controls.Primitives.TickPlacement
+        /* 0x02A9 */ new() { { 0, "Off" }, { 1, "On" }, { 2, "Indeterminate" } }, // Windows.UI.Xaml.Automation.ToggleState
+        /* 0x02AA */ new() { { 0, "Primitive" }, { 1, "Metadata" }, { 2, "Custom" } }, // Windows.UI.Xaml.Interop.TypeKind
+        /* 0x02AB */ new() { { 0, "Default" }, { 1, "PropertyChanged" }, { 2, "Explicit" }, { 3, "LostFocus" } }, // Windows.UI.Xaml.Data.UpdateSourceTrigger
+        /* 0x02AC */ new() { { 0, "Top" }, { 1, "Center" }, { 2, "Bottom" }, { 3, "Stretch" } }, // Windows.UI.Xaml.VerticalAlignment
+        /* 0x02AD */ new() { { 0, "Standard" }, { 1, "Recycling" } }, // Windows.UI.Xaml.Controls.VirtualizationMode
+        /* 0x02AE */ new() { { 0, "None" }, { 1, "LeftButton" }, { 2, "RightButton" }, { 3, "Cancel" }, { 4, "MiddleButton" }, { 5, "XButton1" }, { 6, "XButton2" }, { 8, "Back" }, { 9, "Tab" }, { 12, "Clear" }, { 13, "Enter" }, { 16, "Shift" }, { 17, "Control" }, { 18, "Menu" }, { 19, "Pause" }, { 20, "CapitalLock" }, { 21, "Kana" }, { 23, "Junja" }, { 24, "Final" }, { 25, "Kanji" }, { 27, "Escape" }, { 28, "Convert" }, { 29, "NonConvert" }, { 30, "Accept" }, { 31, "ModeChange" }, { 32, "Space" }, { 33, "PageUp" }, { 34, "PageDown" }, { 35, "End" }, { 36, "Home" }, { 37, "Left" }, { 38, "Up" }, { 39, "Right" }, { 40, "Down" }, { 41, "Select" }, { 42, "Print" }, { 43, "Execute" }, { 44, "Snapshot" }, { 45, "Insert" }, { 46, "Delete" }, { 47, "Help" }, { 48, "Number0" }, { 49, "Number1" }, { 50, "Number2" }, { 51, "Number3" }, { 52, "Number4" }, { 53, "Number5" }, { 54, "Number6" }, { 55, "Number7" }, { 56, "Number8" }, { 57, "Number9" }, { 65, "A" }, { 66, "B" }, { 67, "C" }, { 68, "D" }, { 69, "E" }, { 70, "F" }, { 71, "G" }, { 72, "H" }, { 73, "I" }, { 74, "J" }, { 75, "K" }, { 76, "L" }, { 77, "M" }, { 78, "N" }, { 79, "O" }, { 80, "P" }, { 81, "Q" }, { 82, "R" }, { 83, "S" }, { 84, "T" }, { 85, "U" }, { 86, "V" }, { 87, "W" }, { 88, "X" }, { 89, "Y" }, { 90, "Z" }, { 91, "LeftWindows" }, { 92, "RightWindows" }, { 93, "Application" }, { 95, "Sleep" }, { 96, "NumberPad0" }, { 97, "NumberPad1" }, { 98, "NumberPad2" }, { 99, "NumberPad3" }, { 100, "NumberPad4" }, { 101, "NumberPad5" }, { 102, "NumberPad6" }, { 103, "NumberPad7" }, { 104, "NumberPad8" }, { 105, "NumberPad9" }, { 106, "Multiply" }, { 107, "Add" }, { 108, "Separator" }, { 109, "Subtract" }, { 110, "Decimal" }, { 111, "Divide" }, { 112, "F1" }, { 113, "F2" }, { 114, "F3" }, { 115, "F4" }, { 116, "F5" }, { 117, "F6" }, { 118, "F7" }, { 119, "F8" }, { 120, "F9" }, { 121, "F10" }, { 122, "F11" }, { 123, "F12" }, { 124, "F13" }, { 125, "F14" }, { 126, "F15" }, { 127, "F16" }, { 128, "F17" }, { 129, "F18" }, { 130, "F19" }, { 131, "F20" }, { 132, "F21" }, { 133, "F22" }, { 134, "F23" }, { 135, "F24" }, { 144, "NumberKeyLock" }, { 145, "Scroll" }, { 160, "LeftShift" }, { 161, "RightShift" }, { 162, "LeftControl" }, { 163, "RightControl" }, { 164, "LeftMenu" }, { 165, "RightMenu" } }, // Windows.System.VirtualKey
+        /* 0x02AF */ new() { { 0, "None" }, { 1, "Control" }, { 2, "Menu" }, { 4, "Shift" }, { 8, "Windows" } }, // Windows.System.VirtualKeyModifiers
+        /* 0x02B0 */ new() { { 0, "Visible" }, { 1, "Collapsed" } }, // Windows.UI.Xaml.Visibility
+        /* 0x02B1 */ new() { { 0, "Running" }, { 1, "Closing" }, { 2, "ReadyForUserInteraction" }, { 3, "BlockedByModalWindow" }, { 4, "NotResponding" } }, // Windows.UI.Xaml.Automation.WindowInteractionState
+        /* 0x02B2 */ new() { { 0, "Normal" }, { 1, "Maximized" }, { 2, "Minimized" } }, // Windows.UI.Xaml.Automation.WindowVisualState
+        /* 0x02B3 */ new() { { 0, "Disabled" }, { 1, "Enabled" } }, // Windows.UI.Xaml.Controls.ZoomMode
+        /* 0x02B4 */ new() { { 0, "NoAmount" }, { 1, "LargeDecrement" }, { 2, "SmallDecrement" }, { 3, "LargeIncrement" }, { 4, "SmallIncrement" } }, // Windows.UI.Xaml.Automation.ZoomUnit
         /* 0x02B5 */ null,
         /* 0x02B6 */ null,
         /* 0x02B7 */ null,
@@ -3631,7 +3631,7 @@ internal static class XbfFrameworkTypes
         /* 0x02BC */ null,
         /* 0x02BD */ null,
         /* 0x02BE */ null,
-        /* 0x02BF */ new Dictionary<int, string> { { 0, "Parent" }, { 1, "NextSibling" }, { 2, "PreviousSibling" }, { 3, "FirstChild" }, { 4, "LastChild" } }, // Windows.UI.Xaml.Automation.Peers.AutomationNavigationDirection
+        /* 0x02BF */ new() { { 0, "Parent" }, { 1, "NextSibling" }, { 2, "PreviousSibling" }, { 3, "FirstChild" }, { 4, "LastChild" } }, // Windows.UI.Xaml.Automation.Peers.AutomationNavigationDirection
         /* 0x02C0 */ null,
         /* 0x02C1 */ null,
         /* 0x02C2 */ null,
@@ -3639,12 +3639,12 @@ internal static class XbfFrameworkTypes
         /* 0x02C4 */ null,
         /* 0x02C5 */ null,
         /* 0x02C6 */ null,
-        /* 0x02C7 */ new Dictionary<int, string> { { 0, "Month" }, { 1, "Year" }, { 2, "Decade" } }, // Windows.UI.Xaml.Controls.CalendarViewDisplayMode
-        /* 0x02C8 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Single" }, { 2, "Multiple" } }, // Windows.UI.Xaml.Controls.CalendarViewSelectionMode
-        /* 0x02C9 */ new Dictionary<int, string> { { 0, "Sunday" }, { 1, "Monday" }, { 2, "Tuesday" }, { 3, "Wednesday" }, { 4, "Thursday" }, { 5, "Friday" }, { 6, "Saturday" } }, // Windows.Globalization.DayOfWeek
+        /* 0x02C7 */ new() { { 0, "Month" }, { 1, "Year" }, { 2, "Decade" } }, // Windows.UI.Xaml.Controls.CalendarViewDisplayMode
+        /* 0x02C8 */ new() { { 0, "None" }, { 1, "Single" }, { 2, "Multiple" } }, // Windows.UI.Xaml.Controls.CalendarViewSelectionMode
+        /* 0x02C9 */ new() { { 0, "Sunday" }, { 1, "Monday" }, { 2, "Tuesday" }, { 3, "Wednesday" }, { 4, "Thursday" }, { 5, "Friday" }, { 6, "Saturday" } }, // Windows.Globalization.DayOfWeek
         /* 0x02CA */ null,
         /* 0x02CB */ null,
-        /* 0x02CC */ new Dictionary<int, string> { { 0, "None" }, { 1, "Copy" }, { 2, "Move" }, { 4, "Link" } }, // Windows.ApplicationModel.DataTransfer.DataPackageOperation
+        /* 0x02CC */ new() { { 0, "None" }, { 1, "Copy" }, { 2, "Move" }, { 4, "Link" } }, // Windows.ApplicationModel.DataTransfer.DataPackageOperation
         /* 0x02CD */ null,
         /* 0x02CE */ null,
         /* 0x02CF */ null,
@@ -3657,38 +3657,38 @@ internal static class XbfFrameworkTypes
         /* 0x02D6 */ null,
         /* 0x02D7 */ null,
         /* 0x02D8 */ null,
-        /* 0x02D9 */ new Dictionary<int, string> { { 0, "Overlay" }, { 1, "Inline" }, { 2, "CompactOverlay" }, { 3, "CompactInline" } }, // Windows.UI.Xaml.Controls.SplitViewDisplayMode
-        /* 0x02DA */ new Dictionary<int, string> { { 0, "Left" }, { 1, "Right" } }, // Windows.UI.Xaml.Controls.SplitViewPanePlacement
+        /* 0x02D9 */ new() { { 0, "Overlay" }, { 1, "Inline" }, { 2, "CompactOverlay" }, { 3, "CompactInline" } }, // Windows.UI.Xaml.Controls.SplitViewDisplayMode
+        /* 0x02DA */ new() { { 0, "Left" }, { 1, "Right" } }, // Windows.UI.Xaml.Controls.SplitViewPanePlacement
         /* 0x02DB */ null,
         /* 0x02DC */ null,
         /* 0x02DD */ null,
-        /* 0x02DE */ new Dictionary<int, string> { { 0, "None" }, { 1, "Start" }, { 2, "End" } }, // Windows.UI.Xaml.Automation.AutomationActiveEnd
-        /* 0x02DF */ new Dictionary<int, string> { { 0, "None" }, { 1, "LasVegasLights" }, { 2, "BlinkingBackground" }, { 3, "SparkleText" }, { 4, "MarchingBlackAnts" }, { 5, "MarchingRedAnts" }, { 6, "Shimmer" }, { 7, "Other" } }, // Windows.UI.Xaml.Automation.AutomationAnimationStyle
-        /* 0x02E0 */ new Dictionary<int, string> { { 0, "None" }, { 1, "HollowRoundBullet" }, { 2, "FilledRoundBullet" }, { 3, "HollowSquareBullet" }, { 4, "FilledSquareBullet" }, { 5, "DashBullet" }, { 6, "Other" } }, // Windows.UI.Xaml.Automation.AutomationBulletStyle
-        /* 0x02E1 */ new Dictionary<int, string> { { 0, "LTR" }, { 1, "RTL" } }, // Windows.UI.Xaml.Automation.AutomationCaretBidiMode
-        /* 0x02E2 */ new Dictionary<int, string> { { 0, "Unknown" }, { 1, "EndOfLine" }, { 2, "BeginningOfLine" } }, // Windows.UI.Xaml.Automation.AutomationCaretPosition
-        /* 0x02E3 */ new Dictionary<int, string> { { 0, "Default" }, { 1, "RightToLeft" }, { 2, "BottomToTop" }, { 3, "Vertical" } }, // Windows.UI.Xaml.Automation.AutomationFlowDirections
-        /* 0x02E4 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Outline" }, { 2, "Shadow" }, { 3, "Engraved" }, { 4, "Embossed" } }, // Windows.UI.Xaml.Automation.AutomationOutlineStyles
-        /* 0x02E5 */ new Dictionary<int, string> { { 70001, "Heading1" }, { 70002, "Heading2" }, { 70003, "Heading3" }, { 70004, "Heading4" }, { 70005, "Heading5" }, { 70006, "Heading6" }, { 70007, "Heading7" }, { 70008, "Heading8" }, { 70009, "Heading9" }, { 70010, "Title" }, { 70011, "Subtitle" }, { 70012, "Normal" }, { 70013, "Emphasis" }, { 70014, "Quote" }, { 70015, "BulletedList" } }, // Windows.UI.Xaml.Automation.AutomationStyleId
-        /* 0x02E6 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Single" }, { 2, "WordsOnly" }, { 3, "Double" }, { 4, "Dot" }, { 5, "Dash" }, { 6, "DashDot" }, { 7, "DashDotDot" }, { 8, "Wavy" }, { 9, "ThickSingle" }, { 10, "DoubleWavy" }, { 11, "ThickWavy" }, { 12, "LongDash" }, { 13, "ThickDash" }, { 14, "ThickDashDot" }, { 15, "ThickDashDotDot" }, { 16, "ThickDot" }, { 17, "ThickLongDash" }, { 18, "Other" } }, // Windows.UI.Xaml.Automation.AutomationTextDecorationLineStyle
-        /* 0x02E7 */ new Dictionary<int, string> { { 0, "None" }, { 1, "AutoCorrect" }, { 2, "Composition" }, { 3, "CompositionFinalized" } }, // Windows.UI.Xaml.Automation.AutomationTextEditChangeType
+        /* 0x02DE */ new() { { 0, "None" }, { 1, "Start" }, { 2, "End" } }, // Windows.UI.Xaml.Automation.AutomationActiveEnd
+        /* 0x02DF */ new() { { 0, "None" }, { 1, "LasVegasLights" }, { 2, "BlinkingBackground" }, { 3, "SparkleText" }, { 4, "MarchingBlackAnts" }, { 5, "MarchingRedAnts" }, { 6, "Shimmer" }, { 7, "Other" } }, // Windows.UI.Xaml.Automation.AutomationAnimationStyle
+        /* 0x02E0 */ new() { { 0, "None" }, { 1, "HollowRoundBullet" }, { 2, "FilledRoundBullet" }, { 3, "HollowSquareBullet" }, { 4, "FilledSquareBullet" }, { 5, "DashBullet" }, { 6, "Other" } }, // Windows.UI.Xaml.Automation.AutomationBulletStyle
+        /* 0x02E1 */ new() { { 0, "LTR" }, { 1, "RTL" } }, // Windows.UI.Xaml.Automation.AutomationCaretBidiMode
+        /* 0x02E2 */ new() { { 0, "Unknown" }, { 1, "EndOfLine" }, { 2, "BeginningOfLine" } }, // Windows.UI.Xaml.Automation.AutomationCaretPosition
+        /* 0x02E3 */ new() { { 0, "Default" }, { 1, "RightToLeft" }, { 2, "BottomToTop" }, { 3, "Vertical" } }, // Windows.UI.Xaml.Automation.AutomationFlowDirections
+        /* 0x02E4 */ new() { { 0, "None" }, { 1, "Outline" }, { 2, "Shadow" }, { 3, "Engraved" }, { 4, "Embossed" } }, // Windows.UI.Xaml.Automation.AutomationOutlineStyles
+        /* 0x02E5 */ new() { { 70001, "Heading1" }, { 70002, "Heading2" }, { 70003, "Heading3" }, { 70004, "Heading4" }, { 70005, "Heading5" }, { 70006, "Heading6" }, { 70007, "Heading7" }, { 70008, "Heading8" }, { 70009, "Heading9" }, { 70010, "Title" }, { 70011, "Subtitle" }, { 70012, "Normal" }, { 70013, "Emphasis" }, { 70014, "Quote" }, { 70015, "BulletedList" } }, // Windows.UI.Xaml.Automation.AutomationStyleId
+        /* 0x02E6 */ new() { { 0, "None" }, { 1, "Single" }, { 2, "WordsOnly" }, { 3, "Double" }, { 4, "Dot" }, { 5, "Dash" }, { 6, "DashDot" }, { 7, "DashDotDot" }, { 8, "Wavy" }, { 9, "ThickSingle" }, { 10, "DoubleWavy" }, { 11, "ThickWavy" }, { 12, "LongDash" }, { 13, "ThickDash" }, { 14, "ThickDashDot" }, { 15, "ThickDashDotDot" }, { 16, "ThickDot" }, { 17, "ThickLongDash" }, { 18, "Other" } }, // Windows.UI.Xaml.Automation.AutomationTextDecorationLineStyle
+        /* 0x02E7 */ new() { { 0, "None" }, { 1, "AutoCorrect" }, { 2, "Composition" }, { 3, "CompositionFinalized" } }, // Windows.UI.Xaml.Automation.AutomationTextEditChangeType
         /* 0x02E8 */ null,
         /* 0x02E9 */ null,
         /* 0x02EA */ null,
         /* 0x02EB */ null,
         /* 0x02EC */ null,
         /* 0x02ED */ null,
-        /* 0x02EE */ new Dictionary<int, string> { { 0, "ChildAdded" }, { 1, "ChildRemoved" }, { 2, "ChildrenInvalidated" }, { 3, "ChildrenBulkAdded" }, { 4, "ChildrenBulkRemoved" }, { 5, "ChildrenReordered" } }, // Windows.UI.Xaml.Automation.Peers.AutomationStructureChangeType
-        /* 0x02EF */ new Dictionary<int, string> { { 0, "Peek" }, { 1, "Hidden" }, { 2, "Visible" } }, // Windows.UI.Xaml.Controls.PasswordRevealMode
+        /* 0x02EE */ new() { { 0, "ChildAdded" }, { 1, "ChildRemoved" }, { 2, "ChildrenInvalidated" }, { 3, "ChildrenBulkAdded" }, { 4, "ChildrenBulkRemoved" }, { 5, "ChildrenReordered" } }, // Windows.UI.Xaml.Automation.Peers.AutomationStructureChangeType
+        /* 0x02EF */ new() { { 0, "Peek" }, { 1, "Hidden" }, { 2, "Visible" } }, // Windows.UI.Xaml.Controls.PasswordRevealMode
         /* 0x02F0 */ null,
-        /* 0x02F1 */ new Dictionary<int, string> { { 0, "Unknown" }, { 1, "Audio" }, { 2, "Video" } }, // Windows.Media.Playback.FailedMediaStreamKind
+        /* 0x02F1 */ new() { { 0, "Unknown" }, { 1, "Audio" }, { 2, "Video" } }, // Windows.Media.Playback.FailedMediaStreamKind
         /* 0x02F2 */ null,
         /* 0x02F3 */ null,
         /* 0x02F4 */ null,
         /* 0x02F5 */ null,
         /* 0x02F6 */ null,
         /* 0x02F7 */ null,
-        /* 0x02F8 */ new Dictionary<int, string> { { 0, "Inline" }, { 1, "Overlay" } }, // Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenterCheckMode
+        /* 0x02F8 */ new() { { 0, "Inline" }, { 1, "Overlay" } }, // Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenterCheckMode
         /* 0x02F9 */ null,
         /* 0x02FA */ null,
         /* 0x02FB */ null,
@@ -3696,12 +3696,12 @@ internal static class XbfFrameworkTypes
         /* 0x02FD */ null,
         /* 0x02FE */ null,
         /* 0x02FF */ null,
-        /* 0x0300 */ new Dictionary<int, string> { { 0, "SameThread" }, { 1, "SeparateThread" }, { 2, "SeparateProcess" } }, // Windows.UI.Xaml.Controls.WebViewExecutionMode
+        /* 0x0300 */ new() { { 0, "SameThread" }, { 1, "SeparateThread" }, { 2, "SeparateProcess" } }, // Windows.UI.Xaml.Controls.WebViewExecutionMode
         /* 0x0301 */ null,
-        /* 0x0302 */ new Dictionary<int, string> { { 0, "Unknown" }, { 1, "Defer" }, { 2, "Allow" }, { 3, "Deny" } }, // Windows.UI.Xaml.Controls.WebViewPermissionState
-        /* 0x0303 */ new Dictionary<int, string> { { 0, "Geolocation" }, { 1, "UnlimitedIndexedDBQuota" }, { 2, "Media" }, { 3, "PointerLock" }, { 4, "WebNotifications" }, { 5, "Screen" }, { 6, "ImmersiveView" } }, // Windows.UI.Xaml.Controls.WebViewPermissionType
+        /* 0x0302 */ new() { { 0, "Unknown" }, { 1, "Defer" }, { 2, "Allow" }, { 3, "Deny" } }, // Windows.UI.Xaml.Controls.WebViewPermissionState
+        /* 0x0303 */ new() { { 0, "Geolocation" }, { 1, "UnlimitedIndexedDBQuota" }, { 2, "Media" }, { 3, "PointerLock" }, { 4, "WebNotifications" }, { 5, "Screen" }, { 6, "ImmersiveView" } }, // Windows.UI.Xaml.Controls.WebViewPermissionType
         /* 0x0304 */ null,
-        /* 0x0305 */ new Dictionary<int, string> { { 0, "Default" }, { 1, "BottomEdge" } }, // Windows.UI.Xaml.Controls.CandidateWindowAlignment
+        /* 0x0305 */ new() { { 0, "Default" }, { 1, "BottomEdge" } }, // Windows.UI.Xaml.Controls.CandidateWindowAlignment
         /* 0x0306 */ null,
         /* 0x0307 */ null,
         /* 0x0308 */ null,
@@ -3725,52 +3725,52 @@ internal static class XbfFrameworkTypes
         /* 0x031A */ null,
         /* 0x031B */ null,
         /* 0x031C */ null,
-        /* 0x031D */ new Dictionary<int, string> { { 0, "None" }, { 1, "Single" } }, // Windows.UI.Xaml.Documents.UnderlineStyle
+        /* 0x031D */ new() { { 0, "None" }, { 1, "Single" } }, // Windows.UI.Xaml.Documents.UnderlineStyle
         /* 0x031E */ null,
-        /* 0x031F */ new Dictionary<int, string> { { 0, "AllFormats" }, { 1, "PlainText" } }, // Windows.UI.Xaml.Controls.RichEditClipboardFormat
+        /* 0x031F */ new() { { 0, "AllFormats" }, { 1, "PlainText" } }, // Windows.UI.Xaml.Controls.RichEditClipboardFormat
         /* 0x0320 */ null,
         /* 0x0321 */ null,
         /* 0x0322 */ null,
         /* 0x0323 */ null,
-        /* 0x0324 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Custom" }, { 2, "Form" }, { 3, "Main" }, { 4, "Navigation" }, { 5, "Search" } }, // Windows.UI.Xaml.Automation.Peers.AutomationLandmarkType
+        /* 0x0324 */ new() { { 0, "None" }, { 1, "Custom" }, { 2, "Form" }, { 3, "Main" }, { 4, "Navigation" }, { 5, "Search" } }, // Windows.UI.Xaml.Automation.Peers.AutomationLandmarkType
         /* 0x0325 */ null,
         /* 0x0326 */ null,
         /* 0x0327 */ null,
         /* 0x0328 */ null,
         /* 0x0329 */ null,
-        /* 0x032A */ new Dictionary<int, string> { { 0, "Default" }, { 1, "Collapsed" } }, // Windows.UI.Xaml.Controls.CommandBarLabelPosition
+        /* 0x032A */ new() { { 0, "Default" }, { 1, "Collapsed" } }, // Windows.UI.Xaml.Controls.CommandBarLabelPosition
         /* 0x032B */ null,
-        /* 0x032C */ new Dictionary<int, string> { { 0, "Bottom" }, { 1, "Right" }, { 2, "Collapsed" } }, // Windows.UI.Xaml.Controls.CommandBarDefaultLabelPosition
+        /* 0x032C */ new() { { 0, "Bottom" }, { 1, "Right" }, { 2, "Collapsed" } }, // Windows.UI.Xaml.Controls.CommandBarDefaultLabelPosition
         /* 0x032D */ null,
-        /* 0x032E */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "Visible" }, { 2, "Collapsed" } }, // Windows.UI.Xaml.Controls.CommandBarOverflowButtonVisibility
+        /* 0x032E */ new() { { 0, "Auto" }, { 1, "Visible" }, { 2, "Collapsed" } }, // Windows.UI.Xaml.Controls.CommandBarOverflowButtonVisibility
         /* 0x032F */ null,
         /* 0x0330 */ null,
         /* 0x0331 */ null,
         /* 0x0332 */ null,
-        /* 0x0333 */ new Dictionary<int, string> { { 0, "AddingToOverflow" }, { 1, "RemovingFromOverflow" } }, // Windows.UI.Xaml.Controls.CommandBarDynamicOverflowAction
+        /* 0x0333 */ new() { { 0, "AddingToOverflow" }, { 1, "RemovingFromOverflow" } }, // Windows.UI.Xaml.Controls.CommandBarDynamicOverflowAction
         /* 0x0334 */ null,
         /* 0x0335 */ null,
-        /* 0x0336 */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "On" }, { 2, "Off" } }, // Windows.UI.Xaml.Controls.LightDismissOverlayMode
-        /* 0x0337 */ new Dictionary<int, string> { { 0, "DottedLine" }, { 1, "HighVisibility" }, { 2, "Reveal" } }, // Windows.UI.Xaml.FocusVisualKind
-        /* 0x0338 */ new Dictionary<int, string> { { 0, "Never" }, { 1, "WhenEngaged" }, { 2, "WhenFocused" } }, // Windows.UI.Xaml.Controls.RequiresPointer
+        /* 0x0336 */ new() { { 0, "Auto" }, { 1, "On" }, { 2, "Off" } }, // Windows.UI.Xaml.Controls.LightDismissOverlayMode
+        /* 0x0337 */ new() { { 0, "DottedLine" }, { 1, "HighVisibility" }, { 2, "Reveal" } }, // Windows.UI.Xaml.FocusVisualKind
+        /* 0x0338 */ new() { { 0, "Never" }, { 1, "WhenEngaged" }, { 2, "WhenFocused" } }, // Windows.UI.Xaml.Controls.RequiresPointer
         /* 0x0339 */ null,
         /* 0x033A */ null,
         /* 0x033B */ null,
         /* 0x033C */ null,
         /* 0x033D */ null,
-        /* 0x033E */ new Dictionary<int, string> { { 0, "Skip" }, { 1, "Hide" }, { 2, "Disable" } }, // Windows.UI.Xaml.Media.FastPlayFallbackBehaviour
-        /* 0x033F */ new Dictionary<int, string> { { 0, "Focus" }, { 1, "Invoke" }, { 2, "Show" }, { 3, "Hide" }, { 4, "MovePrevious" }, { 5, "MoveNext" }, { 6, "GoBack" } }, // Windows.UI.Xaml.ElementSoundKind
-        /* 0x0340 */ new Dictionary<int, string> { { 0, "Default" }, { 1, "FocusOnly" }, { 2, "Off" } }, // Windows.UI.Xaml.ElementSoundMode
-        /* 0x0341 */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "Off" }, { 2, "On" } }, // Windows.UI.Xaml.ElementSoundPlayerState
+        /* 0x033E */ new() { { 0, "Skip" }, { 1, "Hide" }, { 2, "Disable" } }, // Windows.UI.Xaml.Media.FastPlayFallbackBehaviour
+        /* 0x033F */ new() { { 0, "Focus" }, { 1, "Invoke" }, { 2, "Show" }, { 3, "Hide" }, { 4, "MovePrevious" }, { 5, "MoveNext" }, { 6, "GoBack" } }, // Windows.UI.Xaml.ElementSoundKind
+        /* 0x0340 */ new() { { 0, "Default" }, { 1, "FocusOnly" }, { 2, "Off" } }, // Windows.UI.Xaml.ElementSoundMode
+        /* 0x0341 */ new() { { 0, "Auto" }, { 1, "Off" }, { 2, "On" } }, // Windows.UI.Xaml.ElementSoundPlayerState
         /* 0x0342 */ null,
-        /* 0x0343 */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "WhenRequested" } }, // Windows.UI.Xaml.ApplicationRequiresPointerMode
+        /* 0x0343 */ new() { { 0, "Auto" }, { 1, "WhenRequested" } }, // Windows.UI.Xaml.ApplicationRequiresPointerMode
         /* 0x0344 */ null,
         /* 0x0345 */ null,
         /* 0x0346 */ null,
         /* 0x0347 */ null,
-        /* 0x0348 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Underline" }, { 2, "Strikethrough" } }, // Windows.UI.Text.TextDecorations
-        /* 0x0349 */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "Bottom" }, { 2, "Top" }, { 3, "Left" }, { 4, "Right" }, { 5, "Center" }, { 6, "Hidden" } }, // Windows.UI.Xaml.Input.KeyTipPlacementMode
-        /* 0x034A */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "Enabled" }, { 2, "Disabled" } }, // Windows.UI.Xaml.Input.XYFocusKeyboardNavigationMode
+        /* 0x0348 */ new() { { 0, "None" }, { 1, "Underline" }, { 2, "Strikethrough" } }, // Windows.UI.Text.TextDecorations
+        /* 0x0349 */ new() { { 0, "Auto" }, { 1, "Bottom" }, { 2, "Top" }, { 3, "Left" }, { 4, "Right" }, { 5, "Center" }, { 6, "Hidden" } }, // Windows.UI.Xaml.Input.KeyTipPlacementMode
+        /* 0x034A */ new() { { 0, "Auto" }, { 1, "Enabled" }, { 2, "Disabled" } }, // Windows.UI.Xaml.Input.XYFocusKeyboardNavigationMode
         /* 0x034B */ null,
         /* 0x034C */ null,
         /* 0x034D */ null,
@@ -3778,7 +3778,7 @@ internal static class XbfFrameworkTypes
         /* 0x034F */ null,
         /* 0x0350 */ null,
         /* 0x0351 */ null,
-        /* 0x0352 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Primary" }, { 2, "Secondary" }, { 3, "Close" } }, // Windows.UI.Xaml.Controls.ContentDialogButton
+        /* 0x0352 */ new() { { 0, "None" }, { 1, "Primary" }, { 2, "Secondary" }, { 3, "Close" } }, // Windows.UI.Xaml.Controls.ContentDialogButton
         /* 0x0353 */ null,
         /* 0x0354 */ null,
         /* 0x0355 */ null,
@@ -3787,17 +3787,17 @@ internal static class XbfFrameworkTypes
         /* 0x0358 */ null,
         /* 0x0359 */ null,
         /* 0x035A */ null,
-        /* 0x035B */ new Dictionary<int, string> { { 0, "OffsetX" }, { 1, "OffsetY" }, { 2, "CrossFade" }, { 3, "Scale" } }, // Windows.UI.Xaml.Media.Animation.ConnectedAnimationComponent
+        /* 0x035B */ new() { { 0, "OffsetX" }, { 1, "OffsetY" }, { 2, "CrossFade" }, { 3, "Scale" } }, // Windows.UI.Xaml.Media.Animation.ConnectedAnimationComponent
         /* 0x035C */ null,
-        /* 0x035D */ new Dictionary<int, string> { { 0, "Success" }, { 1, "NetworkError" }, { 2, "InvalidFormat" }, { 3, "Other" } }, // Windows.UI.Xaml.Media.Imaging.SvgImageSourceLoadStatus
+        /* 0x035D */ new() { { 0, "Success" }, { 1, "NetworkError" }, { 2, "InvalidFormat" }, { 3, "Other" } }, // Windows.UI.Xaml.Media.Imaging.SvgImageSourceLoadStatus
         /* 0x035E */ null,
-        /* 0x035F */ new Dictionary<int, string> { { 0, "Success" }, { 1, "NetworkError" }, { 2, "InvalidFormat" }, { 3, "Other" } }, // Windows.UI.Xaml.Media.LoadedImageSourceLoadStatus
-        /* 0x0360 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Mouse" }, { 2, "Touch" }, { 3, "Pen" }, { 4, "Keyboard" }, { 5, "GameController" } }, // Windows.UI.Xaml.Input.FocusInputDeviceKind
-        /* 0x0361 */ new Dictionary<int, string> { { 0, "Committed" }, { 1, "Always" } }, // Windows.UI.Xaml.Controls.ComboBoxSelectionChangedTrigger
+        /* 0x035F */ new() { { 0, "Success" }, { 1, "NetworkError" }, { 2, "InvalidFormat" }, { 3, "Other" } }, // Windows.UI.Xaml.Media.LoadedImageSourceLoadStatus
+        /* 0x0360 */ new() { { 0, "None" }, { 1, "Mouse" }, { 2, "Touch" }, { 3, "Pen" }, { 4, "Keyboard" }, { 5, "GameController" } }, // Windows.UI.Xaml.Input.FocusInputDeviceKind
+        /* 0x0361 */ new() { { 0, "Committed" }, { 1, "Always" } }, // Windows.UI.Xaml.Controls.ComboBoxSelectionChangedTrigger
         /* 0x0362 */ null,
         /* 0x0363 */ null,
-        /* 0x0364 */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "Projection" }, { 2, "NavigationDirectionDistance" }, { 3, "RectilinearDistance" } }, // Windows.UI.Xaml.Input.XYFocusNavigationStrategy
-        /* 0x0365 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Auto" }, { 2, "Projection" }, { 3, "NavigationDirectionDistance" }, { 4, "RectilinearDistance" } }, // Windows.UI.Xaml.Input.XYFocusNavigationStrategyOverride
+        /* 0x0364 */ new() { { 0, "Auto" }, { 1, "Projection" }, { 2, "NavigationDirectionDistance" }, { 3, "RectilinearDistance" } }, // Windows.UI.Xaml.Input.XYFocusNavigationStrategy
+        /* 0x0365 */ new() { { 0, "None" }, { 1, "Auto" }, { 2, "Projection" }, { 3, "NavigationDirectionDistance" }, { 4, "RectilinearDistance" } }, // Windows.UI.Xaml.Input.XYFocusNavigationStrategyOverride
         /* 0x0366 */ null,
         /* 0x0367 */ null,
         /* 0x0368 */ null,
@@ -3807,16 +3807,16 @@ internal static class XbfFrameworkTypes
         /* 0x036C */ null,
         /* 0x036D */ null,
         /* 0x036E */ null,
-        /* 0x036F */ new Dictionary<int, string> { { -1, "Auto" }, { 0, "None" } }, // Windows.UI.Xaml.ApplicationHighContrastAdjustment
-        /* 0x0370 */ new Dictionary<int, string> { { -2147483648, "Application" }, { -1, "Auto" }, { 0, "None" } }, // Windows.UI.Xaml.ElementHighContrastAdjustment
+        /* 0x036F */ new() { { -1, "Auto" }, { 0, "None" } }, // Windows.UI.Xaml.ApplicationHighContrastAdjustment
+        /* 0x0370 */ new() { { -2147483648, "Application" }, { -1, "Auto" }, { 0, "None" } }, // Windows.UI.Xaml.ElementHighContrastAdjustment
         /* 0x0371 */ null,
         /* 0x0372 */ null,
         /* 0x0373 */ null,
         /* 0x0374 */ null,
-        /* 0x0375 */ new Dictionary<int, string> { { 0, "ItemAdded" }, { 1, "ItemRemoved" }, { 2, "ActionCompleted" }, { 3, "ActionAborted" }, { 4, "Other" } }, // Windows.UI.Xaml.Automation.Peers.AutomationNotificationKind
-        /* 0x0376 */ new Dictionary<int, string> { { 0, "ImportantAll" }, { 1, "ImportantMostRecent" }, { 2, "All" }, { 3, "MostRecent" }, { 4, "CurrentThenMostRecent" } }, // Windows.UI.Xaml.Automation.Peers.AutomationNotificationProcessing
-        /* 0x0377 */ new Dictionary<int, string> { { 0, "Normal" }, { 1, "Lower" }, { 2, "Upper" } }, // Windows.UI.Xaml.Controls.CharacterCasing
-        /* 0x0378 */ new Dictionary<int, string> { { -1, "All" }, { 0, "None" }, { 1, "Bold" }, { 2, "Italic" }, { 4, "Underline" } }, // Windows.UI.Xaml.Controls.DisabledFormattingAccelerators
+        /* 0x0375 */ new() { { 0, "ItemAdded" }, { 1, "ItemRemoved" }, { 2, "ActionCompleted" }, { 3, "ActionAborted" }, { 4, "Other" } }, // Windows.UI.Xaml.Automation.Peers.AutomationNotificationKind
+        /* 0x0376 */ new() { { 0, "ImportantAll" }, { 1, "ImportantMostRecent" }, { 2, "All" }, { 3, "MostRecent" }, { 4, "CurrentThenMostRecent" } }, // Windows.UI.Xaml.Automation.Peers.AutomationNotificationProcessing
+        /* 0x0377 */ new() { { 0, "Normal" }, { 1, "Lower" }, { 2, "Upper" } }, // Windows.UI.Xaml.Controls.CharacterCasing
+        /* 0x0378 */ new() { { -1, "All" }, { 0, "None" }, { 1, "Bold" }, { 2, "Italic" }, { 4, "Underline" } }, // Windows.UI.Xaml.Controls.DisabledFormattingAccelerators
         /* 0x0379 */ null,
         /* 0x037A */ null,
         /* 0x037B */ null,
@@ -3824,7 +3824,7 @@ internal static class XbfFrameworkTypes
         /* 0x037D */ null,
         /* 0x037E */ null,
         /* 0x037F */ null,
-        /* 0x0380 */ new Dictionary<int, string> { { 0, "Popup" }, { 1, "InPlace" } }, // Windows.UI.Xaml.Controls.ContentDialogPlacement
+        /* 0x0380 */ new() { { 0, "Popup" }, { 1, "InPlace" } }, // Windows.UI.Xaml.Controls.ContentDialogPlacement
         /* 0x0381 */ null,
         /* 0x0382 */ null,
         /* 0x0383 */ null,
@@ -3832,29 +3832,29 @@ internal static class XbfFrameworkTypes
         /* 0x0385 */ null,
         /* 0x0386 */ null,
         /* 0x0387 */ null,
-        /* 0x0388 */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "Hidden" } }, // Windows.UI.Xaml.Input.KeyboardAcceleratorPlacementMode
+        /* 0x0388 */ new() { { 0, "Auto" }, { 1, "Hidden" } }, // Windows.UI.Xaml.Input.KeyboardAcceleratorPlacementMode
         /* 0x0389 */ null,
-        /* 0x038A */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "Off" }, { 2, "On" } }, // Windows.UI.Xaml.ElementSpatialAudioMode
+        /* 0x038A */ new() { { 0, "Auto" }, { 1, "Off" }, { 2, "On" } }, // Windows.UI.Xaml.ElementSpatialAudioMode
         /* 0x038B */ null,
         /* 0x038C */ null,
         /* 0x038D */ null,
         /* 0x038E */ null,
         /* 0x038F */ null,
         /* 0x0390 */ null,
-        /* 0x0391 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Level1" }, { 2, "Level2" }, { 3, "Level3" }, { 4, "Level4" }, { 5, "Level5" }, { 6, "Level6" }, { 7, "Level7" }, { 8, "Level8" }, { 9, "Level9" } }, // Windows.UI.Xaml.Automation.Peers.AutomationHeadingLevel
+        /* 0x0391 */ new() { { 0, "None" }, { 1, "Level1" }, { 2, "Level2" }, { 3, "Level3" }, { 4, "Level4" }, { 5, "Level5" }, { 6, "Level6" }, { 7, "Level7" }, { 8, "Level8" }, { 9, "Level9" } }, // Windows.UI.Xaml.Automation.Peers.AutomationHeadingLevel
         /* 0x0392 */ null,
         /* 0x0393 */ null,
         /* 0x0394 */ null,
         /* 0x0395 */ null,
         /* 0x0396 */ null,
-        /* 0x0397 */ new Dictionary<int, string> { { 0, "Inserted" }, { 1, "Removed" }, { 2, "Edited" } }, // Windows.UI.Xaml.Controls.ContentLinkChangeKind
+        /* 0x0397 */ new() { { 0, "Inserted" }, { 1, "Removed" }, { 2, "Edited" } }, // Windows.UI.Xaml.Controls.ContentLinkChangeKind
         /* 0x0398 */ null,
         /* 0x0399 */ null,
         /* 0x039A */ null,
-        /* 0x039B */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "TopLeft" }, { 2, "TopRight" }, { 3, "BottomLeft" }, { 4, "BottomRight" } }, // Windows.UI.Xaml.Controls.HandwritingPanelPlacementAlignment
+        /* 0x039B */ new() { { 0, "Auto" }, { 1, "TopLeft" }, { 2, "TopRight" }, { 3, "BottomLeft" }, { 4, "BottomRight" } }, // Windows.UI.Xaml.Controls.HandwritingPanelPlacementAlignment
         /* 0x039C */ null,
         /* 0x039D */ null,
-        /* 0x039E */ new Dictionary<int, string> { { 0, "Arrow" }, { 1, "Cross" }, { 2, "Custom" }, { 3, "Hand" }, { 4, "Help" }, { 5, "IBeam" }, { 6, "SizeAll" }, { 7, "SizeNortheastSouthwest" }, { 8, "SizeNorthSouth" }, { 9, "SizeNorthwestSoutheast" }, { 10, "SizeWestEast" }, { 11, "UniversalNo" }, { 12, "UpArrow" }, { 13, "Wait" }, { 14, "Pin" }, { 15, "Person" } }, // Windows.UI.Core.CoreCursorType
+        /* 0x039E */ new() { { 0, "Arrow" }, { 1, "Cross" }, { 2, "Custom" }, { 3, "Hand" }, { 4, "Help" }, { 5, "IBeam" }, { 6, "SizeAll" }, { 7, "SizeNortheastSouthwest" }, { 8, "SizeNorthSouth" }, { 9, "SizeNorthwestSoutheast" }, { 10, "SizeWestEast" }, { 11, "UniversalNo" }, { 12, "UpArrow" }, { 13, "Wait" }, { 14, "Pin" }, { 15, "Person" } }, // Windows.UI.Core.CoreCursorType
         /* 0x039F */ null,
         /* 0x03A0 */ null,
         /* 0x03A1 */ null,
@@ -3871,17 +3871,17 @@ internal static class XbfFrameworkTypes
         /* 0x03AC */ null,
         /* 0x03AD */ null,
         /* 0x03AE */ null,
-        /* 0x03AF */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "Standard" }, { 2, "Transient" }, { 3, "TransientWithDismissOnPointerMoveAway" } }, // Windows.UI.Xaml.Controls.Primitives.FlyoutShowMode
+        /* 0x03AF */ new() { { 0, "Auto" }, { 1, "Standard" }, { 2, "Transient" }, { 3, "TransientWithDismissOnPointerMoveAway" } }, // Windows.UI.Xaml.Controls.Primitives.FlyoutShowMode
         /* 0x03B0 */ null,
         /* 0x03B1 */ null,
         /* 0x03B2 */ null,
         /* 0x03B3 */ null,
-        /* 0x03B4 */ new Dictionary<int, string> { { 0, "Added" }, { 1, "Removed" } }, // Windows.UI.Xaml.Controls.InputValidationErrorEventAction
+        /* 0x03B4 */ new() { { 0, "Added" }, { 1, "Removed" } }, // Windows.UI.Xaml.Controls.InputValidationErrorEventAction
         /* 0x03B5 */ null,
-        /* 0x03B6 */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "Compact" }, { 2, "Inline" } }, // Windows.UI.Xaml.Controls.InputValidationKind
-        /* 0x03B7 */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "Default" }, { 2, "Disabled" } }, // Windows.UI.Xaml.Controls.InputValidationMode
+        /* 0x03B6 */ new() { { 0, "Auto" }, { 1, "Compact" }, { 2, "Inline" } }, // Windows.UI.Xaml.Controls.InputValidationKind
+        /* 0x03B7 */ new() { { 0, "Auto" }, { 1, "Default" }, { 2, "Disabled" } }, // Windows.UI.Xaml.Controls.InputValidationMode
         /* 0x03B8 */ null,
-        /* 0x03B9 */ new Dictionary<int, string> { { 0, "InnerBorderEdge" }, { 1, "OuterBorderEdge" } }, // Windows.UI.Xaml.Controls.BackgroundSizing
+        /* 0x03B9 */ new() { { 0, "InnerBorderEdge" }, { 1, "OuterBorderEdge" } }, // Windows.UI.Xaml.Controls.BackgroundSizing
         /* 0x03BA */ null,
         /* 0x03BB */ null,
         /* 0x03BC */ null,
@@ -3890,11 +3890,11 @@ internal static class XbfFrameworkTypes
         /* 0x03BF */ null,
         /* 0x03C0 */ null,
         /* 0x03C1 */ null,
-        /* 0x03C2 */ new Dictionary<int, string> { { 0, "None" }, { 1, "Cut" }, { 2, "Copy" }, { 3, "Paste" }, { 4, "SelectAll" }, { 5, "Delete" }, { 6, "Share" }, { 7, "Save" }, { 8, "Open" }, { 9, "Close" }, { 10, "Pause" }, { 11, "Play" }, { 12, "Stop" }, { 13, "Forward" }, { 14, "Backward" }, { 15, "Undo" }, { 16, "Redo" } }, // Windows.UI.Xaml.Input.StandardUICommandKind
+        /* 0x03C2 */ new() { { 0, "None" }, { 1, "Cut" }, { 2, "Copy" }, { 3, "Paste" }, { 4, "SelectAll" }, { 5, "Delete" }, { 6, "Share" }, { 7, "Save" }, { 8, "Open" }, { 9, "Close" }, { 10, "Pause" }, { 11, "Play" }, { 12, "Stop" }, { 13, "Forward" }, { 14, "Backward" }, { 15, "Undo" }, { 16, "Redo" } }, // Windows.UI.Xaml.Input.StandardUICommandKind
         /* 0x03C3 */ null,
         /* 0x03C4 */ null,
-        /* 0x03C5 */ new Dictionary<int, string> { { 1, "X" }, { 2, "Y" }, { 4, "Z" } }, // Windows.UI.Xaml.Vector3TransitionComponents
-        /* 0x03C6 */ new Dictionary<int, string> { { 0, "Top" }, { 1, "Left" } }, // Windows.UI.Xaml.Controls.ControlHeaderPlacement
+        /* 0x03C5 */ new() { { 1, "X" }, { 2, "Y" }, { 4, "Z" } }, // Windows.UI.Xaml.Vector3TransitionComponents
+        /* 0x03C6 */ new() { { 0, "Top" }, { 1, "Left" } }, // Windows.UI.Xaml.Controls.ControlHeaderPlacement
         /* 0x03C7 */ null,
         /* 0x03C8 */ null,
         /* 0x03C9 */ null,
@@ -3903,7 +3903,7 @@ internal static class XbfFrameworkTypes
         /* 0x03CC */ null,
         /* 0x03CD */ null,
         /* 0x03CE */ null,
-        /* 0x03CF */ new Dictionary<int, string> { { 0, "Inline" }, { 1, "Overlay" } }, // Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenterSelectionIndicatorMode
-        /* 0x03D0 */ new Dictionary<int, string> { { 0, "Auto" }, { 1, "Top" }, { 2, "Bottom" }, { 3, "Left" }, { 4, "Right" }, { 5, "TopEdgeAlignedLeft" }, { 6, "TopEdgeAlignedRight" }, { 7, "BottomEdgeAlignedLeft" }, { 8, "BottomEdgeAlignedRight" }, { 9, "LeftEdgeAlignedTop" }, { 10, "LeftEdgeAlignedBottom" }, { 11, "RightEdgeAlignedTop" }, { 12, "RightEdgeAlignedBottom" } }, // Windows.UI.Xaml.Controls.Primitives.PopupPlacementMode
+        /* 0x03CF */ new() { { 0, "Inline" }, { 1, "Overlay" } }, // Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenterSelectionIndicatorMode
+        /* 0x03D0 */ new() { { 0, "Auto" }, { 1, "Top" }, { 2, "Bottom" }, { 3, "Left" }, { 4, "Right" }, { 5, "TopEdgeAlignedLeft" }, { 6, "TopEdgeAlignedRight" }, { 7, "BottomEdgeAlignedLeft" }, { 8, "BottomEdgeAlignedRight" }, { 9, "LeftEdgeAlignedTop" }, { 10, "LeftEdgeAlignedBottom" }, { 11, "RightEdgeAlignedTop" }, { 12, "RightEdgeAlignedBottom" } }, // Windows.UI.Xaml.Controls.Primitives.PopupPlacementMode
     };
 }

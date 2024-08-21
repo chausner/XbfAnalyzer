@@ -139,7 +139,7 @@ public partial class MainWindow : Window
 
     #region Message Logging
 
-    private StringBuilder log = new StringBuilder();
+    private StringBuilder log = new();
 
     private void ShowLog()
     {
