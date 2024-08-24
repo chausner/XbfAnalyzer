@@ -475,11 +475,15 @@ public class XbfReader
                 break;
 
             case 7: // ResourceDictionary
-                ReadResourceDictionary(reader, nodeSection, false);
+                ReadResourceDictionary(reader, nodeSection, false, false);
                 break;
 
             case 371: // ResourceDictionary
-                ReadResourceDictionary(reader, nodeSection, true);
+                ReadResourceDictionary(reader, nodeSection, true, false);
+                break;
+
+            case 10: // ResourceDictionary
+                ReadResourceDictionary(reader, nodeSection, true, true);
                 break;
 
             case 5: // Visual states
@@ -724,7 +728,7 @@ public class XbfReader
         reader.BaseStream.Position = originalPosition;
     }
 
-    private void ReadResourceDictionary(BinaryReaderEx reader, XbfNodeSection nodeSection, bool extended)
+    private void ReadResourceDictionary(BinaryReaderEx reader, XbfNodeSection nodeSection, bool extended, bool extended2)
     {
         // Resources with keys
         int resourcesCount = reader.Read7BitEncodedInt();
@@ -756,15 +760,54 @@ public class XbfReader
             _objectCollectionStack.Peek().Add(obj);
         }
 
-        if (extended)
-            if (reader.Read7BitEncodedInt() != 0) // TODO: purpose unknown
-                throw new InvalidDataException("Unexpected value");
-
-        // A subset of the target types from above seem to get repeated here, purpose unknown
-        int count2 = reader.Read7BitEncodedInt();
-        for (int i = 0; i < count2; i++)
+        if (!extended2)
         {
-            string targetType = StringTable[reader.ReadUInt16()];
+            if (extended)
+                if (reader.Read7BitEncodedInt() != 0) // TODO: purpose unknown
+                    throw new InvalidDataException("Unexpected value");
+
+            // A subset of the target types from above seem to get repeated here, purpose unknown
+            int count2 = reader.Read7BitEncodedInt();
+            for (int i = 0; i < count2; i++)
+            {
+                string targetType = StringTable[reader.ReadUInt16()];
+            }
+        }
+        else
+        {
+            // TODO: unknown purpose, commented-out code appears to work for most but not all files
+            int count1 = reader.Read7BitEncodedInt();
+            if (count1 != 0)
+                throw new InvalidDataException("Unsupported value");
+            /*for (int i = 0; i < count1; i++)
+            {
+                var v1 = StringTable[reader.ReadUInt16()];
+                var v2 = reader.Read7BitEncodedInt();
+                var startOffset = reader.Read7BitEncodedInt();
+                var endOffset = reader.Read7BitEncodedInt();
+            }*/
+
+            int count2 = reader.Read7BitEncodedInt();
+            if (count2 != 0)
+                throw new InvalidDataException("Unsupported value");
+            /*for (int i = 0; i < count2; i++)
+            {
+                var v3 = reader.ReadUInt16();
+                var v2 = reader.Read7BitEncodedInt();
+                var startOffset = reader.Read7BitEncodedInt();
+                var endOffset = reader.Read7BitEncodedInt();
+            }*/
+
+            int count3 = reader.Read7BitEncodedInt();
+            if (count3 != 0)
+                throw new InvalidDataException("Unsupported value");
+            /*for (int i = 0; i < count3; i++)
+            {
+                var startOffset = reader.Read7BitEncodedInt();
+                var v2 = reader.Read7BitEncodedInt();
+                var v3 = GetTypeName(reader.ReadUInt16());
+                var v4 = StringTable[reader.ReadUInt16()];
+            }*/
         }
     }
 
