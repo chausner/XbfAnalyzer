@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 
 namespace XbfAnalyzer.Xbf;
 
@@ -471,7 +471,11 @@ public class XbfReader
         {
             case 2: // Style
             case 8: // 8 seems to be equivalent
-                ReadStyle(reader, nodeSection);
+                ReadStyle(reader, nodeSection, false);
+                break;
+
+            case 11: // Style
+                ReadStyle(reader, nodeSection, true);
                 break;
 
             case 7: // ResourceDictionary
@@ -533,14 +537,14 @@ public class XbfReader
         _objectStack.Peek().Properties.Add(new XbfObjectProperty(propertyName, obj));
     }
 
-    private void ReadStyle(BinaryReaderEx reader, XbfNodeSection nodeSection)
+    private void ReadStyle(BinaryReaderEx reader, XbfNodeSection nodeSection, bool extended)
     {
         int setterCount = reader.Read7BitEncodedInt();
         for (int i = 0; i < setterCount; i++)
         {
             int valueType = reader.ReadByte();
 
-            string propertyName;
+            string? propertyName = null;
             string typeName; // Name of type implementing the property, currently ignored
             object? propertyValue = null;
             int valueOffset = 0;
@@ -569,14 +573,18 @@ public class XbfReader
                     propertyName = GetPropertyName(reader.ReadUInt16());
                     propertyValue = GetPropertyValue(reader);
                     break;
-                case 0x50: // general objects, setter is encoded as normal object
-                    propertyName = GetPropertyName(reader.ReadUInt16());
+                case 0x40: // general objects, setter is encoded as normal object
+                case 0x50:
+                    if (!extended)
+                        propertyName = GetPropertyName(reader.ReadUInt16());
                     valueOffset = reader.Read7BitEncodedInt();
                     break;
-                case 0xD0: // general objects, setter is encoded as normal object
+                case 0xC0: // general objects, setter is encoded as normal object
+                case 0xD0:
                     if (reader.Read7BitEncodedInt() != 1) // TODO: purpose unknown
                         throw new InvalidDataException("Unexpected value");
-                    propertyName = GetPropertyName(reader.ReadUInt16());
+                    if (!extended)
+                        propertyName = GetPropertyName(reader.ReadUInt16());
                     valueOffset = reader.Read7BitEncodedInt();
                     break;
                 default:
@@ -593,7 +601,7 @@ public class XbfReader
                         // StaticResource or ThemeResource need to be read with the Setter already on the stack
                         XbfObject setter = new XbfObject();
                         setter.TypeName = "Setter";
-                        setter.Properties.Add(new XbfObjectProperty("Property", propertyName));
+                        setter.Properties.Add(new XbfObjectProperty("Property", propertyName!));
                         _objectCollectionStack.Peek().Add(setter);
 
                         _objectStack.Push(setter);
@@ -609,7 +617,7 @@ public class XbfReader
 
                         XbfObject setter = new XbfObject();
                         setter.TypeName = "Setter";
-                        setter.Properties.Add(new XbfObjectProperty("Property", propertyName));
+                        setter.Properties.Add(new XbfObjectProperty("Property", propertyName!));
                         setter.Properties.Add(new XbfObjectProperty("Value", propertyValue));
                         _objectCollectionStack.Peek().Add(setter);                        
                     }
@@ -619,12 +627,14 @@ public class XbfReader
                     {
                         XbfObject setter = new XbfObject();
                         setter.TypeName = "Setter";
-                        setter.Properties.Add(new XbfObjectProperty("Property", propertyName));
+                        setter.Properties.Add(new XbfObjectProperty("Property", propertyName!));
                         setter.Properties.Add(new XbfObjectProperty("Value", propertyValue!));
                         _objectCollectionStack.Peek().Add(setter);                        
                     }
                     break;
+                case 0x40:
                 case 0x50:
+                case 0xC0:
                 case 0xD0:
                     {
                         // General objects can be read directly with ReadObjectInNodeSection
@@ -634,6 +644,10 @@ public class XbfReader
                     break;
             }
         }
+
+        if (extended)
+            if (reader.Read7BitEncodedInt() != 0) // TODO: purpose unknown
+                throw new InvalidDataException("Unexpected value");
     }
 
     private void ReadDeferredElement(BinaryReaderEx reader, XbfNodeSection nodeSection, bool extended, bool extended2)
