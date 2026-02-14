@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="XbfAnalyzer/XbfAnalyzer.csproj" />
+  <Project Path="XbfFormat/XbfFormat.csproj" />
+</Solution>
