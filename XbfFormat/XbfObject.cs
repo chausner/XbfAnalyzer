@@ -2,7 +2,7 @@
 
 namespace XbfAnalyzer.Xbf;
 
-public class XbfObject
+public class XbfObject : ICloneable
 {
     public string? TypeName { get; set; }
     public string? Name { get; set; }
@@ -11,10 +11,11 @@ public class XbfObject
     public int ConnectionID { get; set; }
 
     public List<XbfObjectProperty> Properties { get; } = new List<XbfObjectProperty>();
-    public XbfObjectCollection Children { get; } = new XbfObjectCollection();
+    public XbfObjectCollection Children { get; private set; }
 
-    internal XbfObject()
+    public XbfObject()
     {
+        Children = new XbfObjectCollection(this, "[Content]");
     }
 
     public override string ToString()
@@ -101,5 +102,21 @@ public class XbfObject
         sb.AppendFormat(indent + "</{0}>", TypeName);
 
         return sb.ToString();
+    }
+
+    public object Clone()
+    {
+        XbfObject clone = new XbfObject()
+        {
+            TypeName = TypeName,
+            Name = Name,
+            Uid = Uid,
+            Key = Key,
+            ConnectionID = ConnectionID
+        };
+
+        clone.Properties.AddRange(Properties);
+
+        return clone;
     }
 }

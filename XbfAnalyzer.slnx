@@ -1,4 +1,6 @@
 <Solution>
+  <Project Path="xbf2xaml/xbf2xaml.csproj" Id="52b65a94-db50-49b3-a3be-8a4f5fc70a22" />
   <Project Path="XbfAnalyzer/XbfAnalyzer.csproj" />
   <Project Path="XbfFormat/XbfFormat.csproj" />
+  <Project Path="XbfTest/XbfTest.csproj" />
 </Solution>
