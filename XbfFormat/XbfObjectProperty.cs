@@ -1,4 +1,4 @@
-﻿namespace XbfAnalyzer.Xbf;
+﻿namespace XbfTools.XbfFormat;
 
 public class XbfObjectProperty
 {

@@ -1,4 +1,4 @@
-﻿namespace XbfAnalyzer.Xbf;
+﻿namespace XbfTools.XbfFormat;
 
 internal static class XbfFrameworkTypes
 {

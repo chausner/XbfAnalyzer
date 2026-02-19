@@ -1,4 +1,4 @@
-﻿namespace XbfAnalyzer.Xbf;
+﻿namespace XbfTools.XbfFormat;
 
 using System.Collections.Generic;
 

@@ -1,4 +1,4 @@
-﻿using XbfAnalyzer.Xbf;
+﻿using XbfTools.XbfFormat;
 
 List<string> paths = [];
 

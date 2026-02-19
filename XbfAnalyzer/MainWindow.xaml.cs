@@ -2,9 +2,9 @@
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using XbfAnalyzer.Xbf;
+using XbfTools.XbfFormat;
 
-namespace XbfAnalyzer;
+namespace XbfTools.XbfAnalyzer;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml

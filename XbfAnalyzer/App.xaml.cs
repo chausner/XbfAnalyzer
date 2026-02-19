@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace XbfAnalyzer;
+namespace XbfTools.XbfAnalyzer;
 
 /// <summary>
 /// Interaction logic for App.xaml

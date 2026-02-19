@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XbfAnalyzer.Properties
+namespace XbfTools.XbfAnalyzer.Properties
 {
 
 

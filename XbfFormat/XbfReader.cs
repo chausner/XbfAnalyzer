@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace XbfAnalyzer.Xbf;
+namespace XbfTools.XbfFormat;
 
 public class XbfReader : IDisposable
 {
